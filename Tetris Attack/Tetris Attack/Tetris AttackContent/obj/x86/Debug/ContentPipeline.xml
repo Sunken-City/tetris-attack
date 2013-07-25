@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Sprites\Blocks.png</Source>
+      <Name>Sprites\Blocks</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Sprites\Blocks.xnb</Output>
+      <Time>2013-07-25T10:08:14.9727329-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Chikorita.png</Source>
+      <Name>Sprites\Chikorita</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Sprites\Chikorita.xnb</Output>
+      <Time>2013-07-25T10:08:15.0047361-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Cyndaquil.png</Source>
+      <Name>Sprites\Cyndaquil</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Sprites\Cyndaquil.xnb</Output>
+      <Time>2013-07-25T10:08:15.0347391-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Gym Intro Screens.png</Source>
+      <Name>Sprites\Gym Intro Screens</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Sprites\Gym Intro Screens.xnb</Output>
+      <Time>2013-07-25T10:08:15.0807437-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Gym Stages.png</Source>
+      <Name>Sprites\Gym Stages</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Sprites\Gym Stages.xnb</Output>
+      <Time>2013-07-25T10:08:15.1077464-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Hero.png</Source>
+      <Name>Sprites\Hero</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Sprites\Hero.xnb</Output>
+      <Time>2013-07-25T10:08:15.123748-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Marill.png</Source>
+      <Name>Sprites\Marill</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Sprites\Marill.xnb</Output>
+      <Time>2013-07-25T10:08:15.1607517-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Pikachu.png</Source>
+      <Name>Sprites\Pikachu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Sprites\Pikachu.xnb</Output>
+      <Time>2013-07-25T10:08:15.1847541-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Pokemon Mugshots.png</Source>
+      <Name>Sprites\Pokemon Mugshots</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Sprites\Pokemon Mugshots.xnb</Output>
+      <Time>2013-07-25T10:08:15.1987555-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Portraits.png</Source>
+      <Name>Sprites\Portraits</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Sprites\Portraits.xnb</Output>
+      <Time>2013-07-25T10:08:15.2197576-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Totodile.png</Source>
+      <Name>Sprites\Totodile</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Sprites\Totodile.xnb</Output>
+      <Time>2013-07-25T10:08:15.2447601-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\WinLose Screen.png</Source>
+      <Name>Sprites\WinLose Screen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Sprites\WinLose Screen.xnb</Output>
+      <Time>2013-07-25T10:08:15.2697626-05:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris AttackContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris AttackContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2013-05-23T10:47:28.4144646-05:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
