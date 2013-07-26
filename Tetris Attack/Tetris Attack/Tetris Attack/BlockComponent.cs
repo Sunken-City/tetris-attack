@@ -17,13 +17,66 @@ namespace Tetris_Attack
 	/// </summary>
 	public class BlockComponent : Microsoft.Xna.Framework.DrawableGameComponent
 	{
-		Texture2D _blockTexture;
-		SpriteBatch _batch;
+		Texture2D blockTexture;
+		SpriteBatch blockBatch;
 
 		public BlockComponent(Game game)
 			: base(game)
 		{
 			// TODO: Construct any child components here
+		}
+
+		protected override void LoadContent()
+		{
+			blockTexture = Game.Content.Load<Texture2D>("Sprites/Blocks");
+			blockBatch = new SpriteBatch(Game.GraphicsDevice);
+
+			base.LoadContent();
+		}
+
+		public Rectangle getBlockTexture(int blockType)
+		{
+			Rectangle rect;
+			if (blockType == 1)
+			{
+				rect = new Rectangle(9,10,15,15);
+			}
+			else if (blockType == 2)
+			{
+				rect = new Rectangle(30, 10, 15, 15);
+			}
+			else if (blockType == 3)
+			{
+				rect = new Rectangle(51, 10, 15, 15);
+			}
+			else if (blockType == 4)
+			{
+				rect = new Rectangle(72, 10, 15, 15);
+			}
+			else if (blockType == 5)
+			{
+				rect = new Rectangle(93, 10, 15, 15);
+			}
+			else if (blockType == 6)
+			{
+				rect = new Rectangle(114, 10, 15, 15);
+			}
+			else
+			{
+				rect = new Rectangle(135, 10, 15, 15);
+			}
+
+			return rect;
+		}
+
+		public void blockFall(int numBlocks)
+		{
+			
+		}
+
+		public void blockSwap()
+		{
+
 		}
 
 		/// <summary>

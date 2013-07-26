@@ -20,6 +20,7 @@ namespace Tetris_Attack
 		SpriteBatch spriteBatch;
 		public readonly FrameComponent frameComponent;
 		public readonly BackgroundComponent backgroundComponent;
+		public readonly BlockComponent blockComponent;
 		public readonly CursorComponent cursorComponent;
 
 		public TetrisAttack()
@@ -30,6 +31,7 @@ namespace Tetris_Attack
 			Content.RootDirectory = "Content";
 			Components.Add(backgroundComponent = new BackgroundComponent(this));
 			Components.Add(frameComponent = new FrameComponent(this));
+			Components.Add(blockComponent = new BlockComponent(this));
 			Components.Add(cursorComponent = new CursorComponent(this));
 			
 

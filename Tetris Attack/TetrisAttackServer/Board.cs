@@ -7,7 +7,7 @@ namespace TetrisAttackServer
 {
 	public class Board
 	{
-		private const int MaxListLength = 13;
+		private const int MaxListLength = 10;
 		private const int maxNumberOfLists = 6;
 		private static Random randomNumberGenerator = new Random((int)DateTime.Now.Ticks);
 

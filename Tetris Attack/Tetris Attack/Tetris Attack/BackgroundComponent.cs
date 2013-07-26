@@ -18,7 +18,7 @@ namespace Tetris_Attack
 	public class BackgroundComponent: Microsoft.Xna.Framework.DrawableGameComponent
 	{
 		Texture2D backgroundTexture;
-		Sprite[][] background = new Sprite[8][];
+		Sprite[][] background = new Sprite[7][];
 		SpriteBatch bgBatch;
 
 
@@ -35,7 +35,7 @@ namespace Tetris_Attack
 		public override void Initialize()
 		{
 			base.Initialize();
-			for (int i = 0; i < 8; i++)
+			for (int i = 0; i < 7; i++)
 			{
 				background[i] = new Sprite[10];
 				for (int j = 0; j < 10; j++)
@@ -68,7 +68,7 @@ namespace Tetris_Attack
 		/// <param name="gameTime">Provides a snapshot of timing values.</param>
 		public override void Update(GameTime gameTime)
 		{
-			for (int i = 0; i < 8; i++)
+			for (int i = 0; i < 7; i++)
 			{
 				for (int j = 0; j < 10; j++)
 				{
@@ -89,7 +89,7 @@ namespace Tetris_Attack
 		public override void Draw(GameTime gameTime)
 		{
 			bgBatch.Begin(SpriteSortMode.Deferred, null);
-			for (int i = 0; i < 8; i++)
+			for (int i = 0; i < 7; i++)
 			{
 				for (int j = 0; j < 10; j++)
 				{

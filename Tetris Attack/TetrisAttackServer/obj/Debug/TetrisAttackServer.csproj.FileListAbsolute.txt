@@ -3,3 +3,8 @@ C:\Users\drobertson\Documents\GitHub\tetris-attack\Tetris Attack\TetrisAttackSer
 C:\Users\drobertson\Documents\GitHub\tetris-attack\Tetris Attack\TetrisAttackServer\obj\Debug\TetrisAttackServer.csprojResolveAssemblyReference.cache
 C:\Users\drobertson\Documents\GitHub\tetris-attack\Tetris Attack\TetrisAttackServer\obj\Debug\TetrisAttackServer.dll
 C:\Users\drobertson\Documents\GitHub\tetris-attack\Tetris Attack\TetrisAttackServer\obj\Debug\TetrisAttackServer.pdb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\TetrisAttackServer\bin\Debug\TetrisAttackServer.dll
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\TetrisAttackServer\bin\Debug\TetrisAttackServer.pdb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\TetrisAttackServer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\TetrisAttackServer\obj\Debug\TetrisAttackServer.dll
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\TetrisAttackServer\obj\Debug\TetrisAttackServer.pdb

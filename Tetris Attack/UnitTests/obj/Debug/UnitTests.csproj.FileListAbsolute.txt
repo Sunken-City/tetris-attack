@@ -5,3 +5,10 @@ C:\Users\drobertson\Documents\GitHub\tetris-attack\Tetris Attack\UnitTests\bin\D
 C:\Users\drobertson\Documents\GitHub\tetris-attack\Tetris Attack\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
 C:\Users\drobertson\Documents\GitHub\tetris-attack\Tetris Attack\UnitTests\obj\Debug\UnitTests.dll
 C:\Users\drobertson\Documents\GitHub\tetris-attack\Tetris Attack\UnitTests\obj\Debug\UnitTests.pdb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\UnitTests\bin\Debug\UnitTests.dll
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\UnitTests\bin\Debug\TetrisAttackServer.dll
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\UnitTests\bin\Debug\TetrisAttackServer.pdb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\UnitTests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\UnitTests\obj\Debug\UnitTests.dll
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\UnitTests\obj\Debug\UnitTests.pdb

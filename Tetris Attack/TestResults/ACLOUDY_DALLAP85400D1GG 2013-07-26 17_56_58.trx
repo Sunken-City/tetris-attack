@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="61131202-5db4-4986-b568-fe4a748da814" name="ACLOUDY@DALLAP85400D1GG 2013-07-26 17:56:58" runUser="BROWER\ACLOUDY" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="b69bb56d-6a7a-490e-820b-0577eff70bc1">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="ACLOUDY_DALLAP85400D1GG 2013-07-26 17_56_58">
+      <DeploymentItem filename="C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\TetrisAttackServer\bin\Debug\TetrisAttackServer.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-07-26T17:56:58.6816905-05:00" queuing="2013-07-26T17:57:02.2976905-05:00" start="2013-07-26T17:57:02.5946905-05:00" finish="2013-07-26T17:57:25.1826336-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="6" executed="6" passed="5" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestBlockForLockedStateTrue" storage="c:\users\acloudy\documents\tetris-attack\tetris attack\unittests\bin\debug\unittests.dll" id="366b9555-3b92-936e-eae3-9fdd2835a9f2">
+      <Execution timeOut="1500" id="9b0e8d40-f418-4b53-8845-eb9c3de30e4f" />
+      <TestCategory>
+        <TestCategoryItem TestCategory="Unit Test" />
+      </TestCategory>
+      <TestMethod codeBase="C:/Users/acloudy/Documents/tetris-attack/Tetris Attack/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.UnitTestServer, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestBlockForLockedStateTrue" />
+    </UnitTest>
+    <UnitTest name="LoseConditionIsNotMet" storage="c:\users\acloudy\documents\tetris-attack\tetris attack\unittests\bin\debug\unittests.dll" id="994b0da3-1271-1917-fc62-a91b982e3aa0">
+      <Execution id="61e7d625-c0c0-4e30-b38f-698b89d52b2b" />
+      <TestMethod codeBase="C:/Users/acloudy/Documents/tetris-attack/Tetris Attack/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.BoardTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LoseConditionIsNotMet" />
+    </UnitTest>
+    <UnitTest name="TestBlockForLockedStateFalse" storage="c:\users\acloudy\documents\tetris-attack\tetris attack\unittests\bin\debug\unittests.dll" id="0d886648-a91e-7a8d-5309-a64a21609128">
+      <Execution timeOut="1500" id="9179a25f-d562-46b9-9f3d-b4c602befb78" />
+      <TestCategory>
+        <TestCategoryItem TestCategory="Unit Test" />
+      </TestCategory>
+      <TestMethod codeBase="C:/Users/acloudy/Documents/tetris-attack/Tetris Attack/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.UnitTestServer, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestBlockForLockedStateFalse" />
+    </UnitTest>
+    <UnitTest name="BuildNewBoardTest" storage="c:\users\acloudy\documents\tetris-attack\tetris attack\unittests\bin\debug\unittests.dll" id="ea0497f6-bf63-77ac-3dd0-095f959ab3a0">
+      <Execution id="2decc499-4e4d-43f1-82cc-4d4345821e3b" />
+      <TestMethod codeBase="C:/Users/acloudy/Documents/tetris-attack/Tetris Attack/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.BoardTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BuildNewBoardTest" />
+    </UnitTest>
+    <UnitTest name="LoseConditionIsMet" storage="c:\users\acloudy\documents\tetris-attack\tetris attack\unittests\bin\debug\unittests.dll" id="f0e5a0ab-75c6-09aa-6d64-38c96a09bf68">
+      <Execution id="5ccdd45b-d5aa-41ae-aac5-5273e477ab14" />
+      <TestMethod codeBase="C:/Users/acloudy/Documents/tetris-attack/Tetris Attack/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.BoardTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LoseConditionIsMet" />
+    </UnitTest>
+    <UnitTest name="PushBlocksTest" storage="c:\users\acloudy\documents\tetris-attack\tetris attack\unittests\bin\debug\unittests.dll" id="35a948c7-e32f-bf2e-4e01-396181b97737">
+      <Execution id="c14d5e9a-d556-4c2a-8a54-fd2b806aae65" />
+      <TestMethod codeBase="C:/Users/acloudy/Documents/tetris-attack/Tetris Attack/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.BoardTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PushBlocksTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0d886648-a91e-7a8d-5309-a64a21609128" executionId="9179a25f-d562-46b9-9f3d-b4c602befb78" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="35a948c7-e32f-bf2e-4e01-396181b97737" executionId="c14d5e9a-d556-4c2a-8a54-fd2b806aae65" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="366b9555-3b92-936e-eae3-9fdd2835a9f2" executionId="9b0e8d40-f418-4b53-8845-eb9c3de30e4f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="994b0da3-1271-1917-fc62-a91b982e3aa0" executionId="61e7d625-c0c0-4e30-b38f-698b89d52b2b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ea0497f6-bf63-77ac-3dd0-095f959ab3a0" executionId="2decc499-4e4d-43f1-82cc-4d4345821e3b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f0e5a0ab-75c6-09aa-6d64-38c96a09bf68" executionId="5ccdd45b-d5aa-41ae-aac5-5273e477ab14" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="9179a25f-d562-46b9-9f3d-b4c602befb78" testId="0d886648-a91e-7a8d-5309-a64a21609128" testName="TestBlockForLockedStateFalse" computerName="DALLAP85400D1GG" duration="00:00:00.0668553" startTime="2013-07-26T17:57:02.8136905-05:00" endTime="2013-07-26T17:57:05.2846905-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9179a25f-d562-46b9-9f3d-b4c602befb78">
+    </UnitTestResult>
+    <UnitTestResult executionId="c14d5e9a-d556-4c2a-8a54-fd2b806aae65" testId="35a948c7-e32f-bf2e-4e01-396181b97737" testName="PushBlocksTest" computerName="DALLAP85400D1GG" duration="00:00:00.0023548" startTime="2013-07-26T17:57:05.3396905-05:00" endTime="2013-07-26T17:57:05.3606905-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c14d5e9a-d556-4c2a-8a54-fd2b806aae65">
+    </UnitTestResult>
+    <UnitTestResult executionId="9b0e8d40-f418-4b53-8845-eb9c3de30e4f" testId="366b9555-3b92-936e-eae3-9fdd2835a9f2" testName="TestBlockForLockedStateTrue" computerName="DALLAP85400D1GG" duration="00:00:00.0002441" startTime="2013-07-26T17:57:05.3836905-05:00" endTime="2013-07-26T17:57:05.3906905-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9b0e8d40-f418-4b53-8845-eb9c3de30e4f">
+    </UnitTestResult>
+    <UnitTestResult executionId="61e7d625-c0c0-4e30-b38f-698b89d52b2b" testId="994b0da3-1271-1917-fc62-a91b982e3aa0" testName="LoseConditionIsNotMet" computerName="DALLAP85400D1GG" duration="00:00:00.0712481" startTime="2013-07-26T17:57:05.4386905-05:00" endTime="2013-07-26T17:57:05.5176905-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="61e7d625-c0c0-4e30-b38f-698b89d52b2b">
+    </UnitTestResult>
+    <UnitTestResult executionId="2decc499-4e4d-43f1-82cc-4d4345821e3b" testId="ea0497f6-bf63-77ac-3dd0-095f959ab3a0" testName="BuildNewBoardTest" computerName="DALLAP85400D1GG" duration="00:00:19.4144068" startTime="2013-07-26T17:57:05.5276905-05:00" endTime="2013-07-26T17:57:24.9466100-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2decc499-4e4d-43f1-82cc-4d4345821e3b">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreNotEqual failed. Expected any value except:&lt;6&gt;. Actual:&lt;6&gt;. </Message>
+          <StackTrace>   at UnitTests.BoardTest.BuildNewBoardTest() in C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\UnitTests\BoardTest.cs:line 149
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5ccdd45b-d5aa-41ae-aac5-5273e477ab14" testId="f0e5a0ab-75c6-09aa-6d64-38c96a09bf68" testName="LoseConditionIsMet" computerName="DALLAP85400D1GG" duration="00:00:00.0005594" startTime="2013-07-26T17:57:24.9736127-05:00" endTime="2013-07-26T17:57:24.9946148-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5ccdd45b-d5aa-41ae-aac5-5273e477ab14">
+    </UnitTestResult>
+  </Results>
+</TestRun>
