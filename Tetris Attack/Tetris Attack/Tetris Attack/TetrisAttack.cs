@@ -18,11 +18,16 @@ namespace Tetris_Attack
 	{
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
+		public readonly FrameComponent frameComponent;
+		public readonly BackgroundComponent backgroundComponent;
 
 		public TetrisAttack()
 		{
 			graphics = new GraphicsDeviceManager(this);
 			Content.RootDirectory = "Content";
+			Components.Add(frameComponent = new FrameComponent(this));
+			Components.Add(backgroundComponent = new BackgroundComponent(this));
+
 		}
 
 		/// <summary>

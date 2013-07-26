@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 
-namespace XNA_Test
+namespace Tetris_Attack
 {
 	public class Sprite
 	{
