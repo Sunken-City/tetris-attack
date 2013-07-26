@@ -1,0 +1,7 @@
+C:\Users\drobertson\Documents\GitHub\tetris-attack\Tetris Attack\UnitTests\bin\Debug\UnitTests.dll
+C:\Users\drobertson\Documents\GitHub\tetris-attack\Tetris Attack\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\drobertson\Documents\GitHub\tetris-attack\Tetris Attack\UnitTests\bin\Debug\TetrisAttackServer.dll
+C:\Users\drobertson\Documents\GitHub\tetris-attack\Tetris Attack\UnitTests\bin\Debug\TetrisAttackServer.pdb
+C:\Users\drobertson\Documents\GitHub\tetris-attack\Tetris Attack\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\drobertson\Documents\GitHub\tetris-attack\Tetris Attack\UnitTests\obj\Debug\UnitTests.dll
+C:\Users\drobertson\Documents\GitHub\tetris-attack\Tetris Attack\UnitTests\obj\Debug\UnitTests.pdb
