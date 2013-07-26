@@ -18,11 +18,21 @@ namespace Tetris_Attack
 	{
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
+		public readonly FrameComponent frameComponent;
+		public readonly BackgroundComponent backgroundComponent;
+		public readonly CursorComponent cursorComponent;
 
 		public TetrisAttack()
 		{
 			graphics = new GraphicsDeviceManager(this);
+			graphics.PreferredBackBufferHeight = 413;
+			graphics.PreferredBackBufferWidth = 459;
 			Content.RootDirectory = "Content";
+			Components.Add(backgroundComponent = new BackgroundComponent(this));
+			Components.Add(frameComponent = new FrameComponent(this));
+			Components.Add(cursorComponent = new CursorComponent(this));
+			
+
 		}
 
 		/// <summary>
@@ -81,7 +91,7 @@ namespace Tetris_Attack
 		/// <param name="gameTime">Provides a snapshot of timing values.</param>
 		protected override void Draw(GameTime gameTime)
 		{
-			GraphicsDevice.Clear(Color.CornflowerBlue);
+			GraphicsDevice.Clear(Color.Black);
 
 			// TODO: Add your drawing code here
 

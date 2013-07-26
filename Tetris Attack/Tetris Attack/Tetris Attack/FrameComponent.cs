@@ -15,9 +15,13 @@ namespace Tetris_Attack
 	/// <summary>
 	/// This is a game component that implements IUpdateable.
 	/// </summary>
-	public class Block : Microsoft.Xna.Framework.DrawableGameComponent
+	public class FrameComponent : Microsoft.Xna.Framework.DrawableGameComponent
 	{
-		public Block(Game game)
+		Texture2D frameTexture;
+		Sprite frame;
+		SpriteBatch frameBatch;
+
+		public FrameComponent(Game game)
 			: base(game)
 		{
 			// TODO: Construct any child components here
@@ -29,9 +33,20 @@ namespace Tetris_Attack
 		/// </summary>
 		public override void Initialize()
 		{
-			// TODO: Add your initialization code here
-
 			base.Initialize();
+			frame = new Sprite(frameTexture, new Rectangle(10, 10, 63, 143));
+			frame.Scale = 3;
+			frame.Position = new Vector2(270, 0);
+			frame.ZLayer = 0f;
+
+		}
+
+		protected override void LoadContent()
+		{
+			frameTexture = Game.Content.Load<Texture2D>("Sprites/Totodile");
+			frameBatch = new SpriteBatch(Game.GraphicsDevice);
+
+			base.LoadContent();
 		}
 
 		/// <summary>
@@ -40,9 +55,16 @@ namespace Tetris_Attack
 		/// <param name="gameTime">Provides a snapshot of timing values.</param>
 		public override void Update(GameTime gameTime)
 		{
-			// TODO: Add your update code here
 
 			base.Update(gameTime);
+		}
+
+		public override void Draw(GameTime gameTime)
+		{
+			frameBatch.Begin(SpriteSortMode.FrontToBack, null);
+			frame.Draw(gameTime, frameBatch);
+			frameBatch.End();
+			base.Draw(gameTime);
 		}
 	}
 }

@@ -7,7 +7,7 @@ namespace TetrisAttackServer
 {
 	public class Board
 	{
-		public static readonly int MaxListLength = 13;
+		private const int MaxListLength = 13;
 		private const int maxNumberOfLists = 6;
 		private static Random randomNumberGenerator = new Random((int)DateTime.Now.Ticks);
 
@@ -42,7 +42,7 @@ namespace TetrisAttackServer
 			return new Block()
 			{
 				State = BlockStates.AtRest,
-				Type = (BlockTypes)randomNumberGenerator.Next((int)BlockTypes.Empty, (int)BlockTypes.UpsideDownTriangle)
+				Type = (BlockTypes)randomNumberGenerator.Next((int)BlockTypes.Star, (int)BlockTypes.UpsideDownTriangle)
 			};
 		}
 

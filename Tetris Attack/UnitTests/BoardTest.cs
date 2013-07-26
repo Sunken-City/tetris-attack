@@ -134,5 +134,19 @@ namespace UnitTests
 
 			Assert.AreEqual(++numberOfBlocksInTheList, target.BlockLists[0].Count);
 		}
+
+		/// <summary>
+		///A test for BuildNewBoard
+		///</summary>
+		[TestMethod()]
+		public void BuildNewBoardTest()
+		{			
+			Board actual = Board.BuildNewBoard();
+
+			Assert.IsNotNull(actual);
+			Assert.AreNotEqual(actual.BlockLists[0].First.Value.Type, actual.BlockLists[1].First.Value.Type);
+			Assert.AreNotEqual(actual.BlockLists[0].Last.Value.Type, actual.BlockLists[1].Last.Value.Type);
+			Assert.AreNotEqual(6, actual.BlockLists.Count);
+		}
 	}
 }

@@ -107,9 +107,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Block.cs" />
+    <Compile Include="BlockComponent.cs" />
+    <Compile Include="BackgroundComponent.cs" />
+    <Compile Include="FrameComponent.cs" />
+    <Compile Include="CursorComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Sprite.cs" />
     <Compile Include="TetrisAttack.cs" />
   </ItemGroup>
   <ItemGroup>
