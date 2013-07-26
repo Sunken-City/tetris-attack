@@ -18,7 +18,7 @@ namespace Tetris_Attack
 	public class BackgroundComponent: Microsoft.Xna.Framework.DrawableGameComponent
 	{
 		Texture2D backgroundTexture;
-		Sprite[][] background = new Sprite[12][];
+		Sprite[][] background = new Sprite[7][];
 		SpriteBatch bgBatch;
 
 
@@ -35,14 +35,17 @@ namespace Tetris_Attack
 		public override void Initialize()
 		{
 			base.Initialize();
-			for (int i = 0; i < 12; i++)
+			for (int i = 0; i < 7; i++)
 			{
-				background[i] = new Sprite[6];
-				for (int j = 0; j < 6; j++)
+				background[i] = new Sprite[10];
+				for (int j = 0; j < 10; j++)
 				{
 					Sprite backgroundTile = new Sprite(backgroundTexture, new Rectangle(151, 72, 15, 15));
 					backgroundTile.Scale = 3;
 					backgroundTile.Position = new Vector2(i * 45 , j * 45);
+					//backgroundTile.Velocity = new Vector2(-1, 1);
+					backgroundTile.Origin = new Vector2(0, 0);
+					backgroundTile.ZLayer = 1f;
 					background[i][j] = backgroundTile;
 				}
 			}
@@ -65,16 +68,30 @@ namespace Tetris_Attack
 		/// <param name="gameTime">Provides a snapshot of timing values.</param>
 		public override void Update(GameTime gameTime)
 		{
-
+			for (int i = 0; i < 7; i++)
+			{
+				for (int j = 0; j < 10; j++)
+				{
+					var tile = background[i][j];
+					if ((tile.Position.Y += tile.Velocity.Y) > 405)
+					{
+						tile.Position.Y = 0;
+					}
+					if ((tile.Position.X += tile.Velocity.X) < 0)
+					{
+						tile.Position.X = 270;
+					}
+				}
+			}
 			base.Update(gameTime);
 		}
 
 		public override void Draw(GameTime gameTime)
 		{
-			bgBatch.Begin();
-			for (int i = 0; i < 12; i++)
+			bgBatch.Begin(SpriteSortMode.Deferred, null);
+			for (int i = 0; i < 7; i++)
 			{
-				for (int j = 0; j < 6; j++)
+				for (int j = 0; j < 10; j++)
 				{
 					background[i][j].Draw(gameTime, bgBatch);
 				}

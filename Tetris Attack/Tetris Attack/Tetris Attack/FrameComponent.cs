@@ -36,7 +36,8 @@ namespace Tetris_Attack
 			base.Initialize();
 			frame = new Sprite(frameTexture, new Rectangle(10, 10, 63, 143));
 			frame.Scale = 3;
-			frame.Position = new Vector2(180, 0);
+			frame.Position = new Vector2(270, 0);
+			frame.ZLayer = 0f;
 
 		}
 
@@ -60,7 +61,7 @@ namespace Tetris_Attack
 
 		public override void Draw(GameTime gameTime)
 		{
-			frameBatch.Begin();
+			frameBatch.Begin(SpriteSortMode.FrontToBack, null);
 			frame.Draw(gameTime, frameBatch);
 			frameBatch.End();
 			base.Draw(gameTime);
