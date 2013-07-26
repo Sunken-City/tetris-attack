@@ -20,13 +20,17 @@ namespace Tetris_Attack
 		SpriteBatch spriteBatch;
 		public readonly FrameComponent frameComponent;
 		public readonly BackgroundComponent backgroundComponent;
+		public readonly CursorComponent cursorComponent;
 
 		public TetrisAttack()
 		{
 			graphics = new GraphicsDeviceManager(this);
+			graphics.PreferredBackBufferHeight = 413;
+			graphics.PreferredBackBufferWidth = 459;
 			Content.RootDirectory = "Content";
 			Components.Add(backgroundComponent = new BackgroundComponent(this));
 			Components.Add(frameComponent = new FrameComponent(this));
+			Components.Add(cursorComponent = new CursorComponent(this));
 			
 
 		}
