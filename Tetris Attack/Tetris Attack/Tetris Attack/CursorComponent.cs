@@ -39,7 +39,7 @@ namespace Tetris_Attack
 			cursor = new Sprite(cursorTexture, new Rectangle(139, 35, 38, 22));
 			cursor.Scale = 3;
 			cursor.Position = new Vector2(0, 0);
-			cursor.ZLayer = 0f;
+			cursor.Origin = new Vector2(4, 4);
 		}
 
 		protected override void LoadContent()
@@ -77,6 +77,19 @@ namespace Tetris_Attack
 				timePassed = TimeSpan.Zero;
 				cursor.Position.Y += 45;
 			}
+			if ((timePassed += gameTime.ElapsedGameTime) > timePerMove && ks.IsKeyDown(Keys.Space))
+			{
+				timePassed = TimeSpan.Zero;
+				//SwapBlocks
+			}
+			if (cursor.Position.X > 224)
+				cursor.Position.X = 180;
+			if (cursor.Position.X < 0)
+				cursor.Position.X = 0;
+			if (cursor.Position.Y > 404)
+				cursor.Position.Y = 360;
+			if (cursor.Position.Y < 0)
+				cursor.Position.Y = 0;
 			base.Update(gameTime);
 		}
 
