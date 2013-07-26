@@ -10,3 +10,21 @@ Content\Sprites\Pokemon Mugshots.xnb
 Content\Sprites\Portraits.xnb
 Content\Sprites\Totodile.xnb
 Content\Sprites\WinLose Screen.xnb
+Content\Audio\Awooga.xnb
+Content\Audio\Countdown.xnb
+Content\Audio\Fall.xnb
+Content\Audio\Good1.xnb
+Content\Audio\Good2.xnb
+Content\Audio\Good3.xnb
+Content\Audio\Good4.xnb
+Content\Audio\Move.xnb
+Content\Audio\Start.xnb
+Content\Audio\Swap.xnb
+Content\Audio\Music\Pokemon Puzzle Challenge Music - Azalea & Blackthorn Gym.xnb
+Content\Audio\Music\Pokemon Puzzle Challenge Music - Azalea & Blackthorn Gym.wma
+Content\Audio\Music\Pokemon Puzzle Challenge Music - Danger! (Gym Battle).xnb
+Content\Audio\Music\Pokemon Puzzle Challenge Music - Danger! (Gym Battle).wma
+Content\Audio\Music\Pokemon Puzzle Challenge Music - Danger! (Lance Battle).xnb
+Content\Audio\Music\Pokemon Puzzle Challenge Music - Danger! (Lance Battle).wma
+Content\Audio\Music\Pokemon Puzzle Challenge Music - Mahogany Gym.xnb
+Content\Audio\Music\Pokemon Puzzle Challenge Music - Mahogany Gym.wma

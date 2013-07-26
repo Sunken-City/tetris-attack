@@ -109,6 +109,136 @@
       <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Sprites\WinLose Screen.xnb</Output>
       <Time>2013-07-25T10:08:15.2697626-05:00</Time>
     </Item>
+    <Item>
+      <Source>Audio\Awooga.wav</Source>
+      <Name>Audio\Awooga</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Awooga.xnb</Output>
+      <Time>2013-07-26T14:01:14.2599918-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Countdown.wav</Source>
+      <Name>Audio\Countdown</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Countdown.xnb</Output>
+      <Time>2013-07-26T14:01:14.3139972-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Fall.wav</Source>
+      <Name>Audio\Fall</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Fall.xnb</Output>
+      <Time>2013-07-26T14:01:14.3259984-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Good1.wav</Source>
+      <Name>Audio\Good1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Good1.xnb</Output>
+      <Time>2013-07-26T14:01:14.3980056-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Good2.wav</Source>
+      <Name>Audio\Good2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Good2.xnb</Output>
+      <Time>2013-07-26T14:01:14.4130071-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Good3.wav</Source>
+      <Name>Audio\Good3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Good3.xnb</Output>
+      <Time>2013-07-26T14:01:14.4530111-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Good4.wav</Source>
+      <Name>Audio\Good4</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Good4.xnb</Output>
+      <Time>2013-07-26T14:01:14.5150173-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Move.wav</Source>
+      <Name>Audio\Move</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Move.xnb</Output>
+      <Time>2013-07-26T14:01:14.5530211-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Start.wav</Source>
+      <Name>Audio\Start</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Start.xnb</Output>
+      <Time>2013-07-26T14:01:14.5970255-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Swap.wav</Source>
+      <Name>Audio\Swap</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Swap.xnb</Output>
+      <Time>2013-07-26T14:01:14.6110269-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Music\Pokemon Puzzle Challenge Music - Azalea &amp; Blackthorn Gym.mp3</Source>
+      <Name>Audio\Music\Pokemon Puzzle Challenge Music - Azalea &amp; Blackthorn Gym</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Pokemon Puzzle Challenge Music - Azalea &amp; Blackthorn Gym.xnb</Output>
+      <Extra>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Pokemon Puzzle Challenge Music - Azalea &amp; Blackthorn Gym.wma</Extra>
+      <Time>2013-07-26T14:01:55.236089-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Music\Pokemon Puzzle Challenge Music - Danger! (Gym Battle).mp3</Source>
+      <Name>Audio\Music\Pokemon Puzzle Challenge Music - Danger! (Gym Battle)</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Pokemon Puzzle Challenge Music - Danger! (Gym Battle).xnb</Output>
+      <Extra>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Pokemon Puzzle Challenge Music - Danger! (Gym Battle).wma</Extra>
+      <Time>2013-07-26T14:01:55.3030957-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Music\Pokemon Puzzle Challenge Music - Danger! (Lance Battle).mp3</Source>
+      <Name>Audio\Music\Pokemon Puzzle Challenge Music - Danger! (Lance Battle)</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Pokemon Puzzle Challenge Music - Danger! (Lance Battle).xnb</Output>
+      <Extra>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Pokemon Puzzle Challenge Music - Danger! (Lance Battle).wma</Extra>
+      <Time>2013-07-26T14:01:55.3671021-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Music\Pokemon Puzzle Challenge Music - Mahogany Gym.mp3</Source>
+      <Name>Audio\Music\Pokemon Puzzle Challenge Music - Mahogany Gym</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Pokemon Puzzle Challenge Music - Mahogany Gym.xnb</Output>
+      <Extra>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Pokemon Puzzle Challenge Music - Mahogany Gym.wma</Extra>
+      <Time>2013-07-26T14:01:55.4671121-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
