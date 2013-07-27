@@ -18,9 +18,10 @@ namespace Tetris_Attack
 	{
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
+		public Board board;
 		public readonly FrameComponent frameComponent;
 		public readonly BackgroundComponent backgroundComponent;
-		public readonly BoardComponent blockComponent;
+		public readonly BlockComponent blockComponent;
 		public readonly CursorComponent cursorComponent;
 
 		public TetrisAttack()
@@ -29,9 +30,10 @@ namespace Tetris_Attack
 			graphics.PreferredBackBufferHeight = 413;
 			graphics.PreferredBackBufferWidth = 459;
 			Content.RootDirectory = "Content";
+			board = Board.BuildNewBoard();
 			Components.Add(backgroundComponent = new BackgroundComponent(this));
 			Components.Add(frameComponent = new FrameComponent(this));
-			//Components.Add(blockComponent = new BoardComponent(this));
+			Components.Add(blockComponent = new BlockComponent(this, board));
 			Components.Add(cursorComponent = new CursorComponent(this));
 			
 

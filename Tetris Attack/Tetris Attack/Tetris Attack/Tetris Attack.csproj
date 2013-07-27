@@ -107,14 +107,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Block.cs" />
     <Compile Include="BlockComponent.cs" />
-    <Compile Include="BoardComponent.cs" />
     <Compile Include="BackgroundComponent.cs" />
-    <Compile Include="BlockStates.cs" />
-    <Compile Include="BlockTypes.cs" />
-    <Compile Include="Board.cs" />
-    <Compile Include="Cursor.cs" />
     <Compile Include="FrameComponent.cs" />
     <Compile Include="CursorComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -122,6 +116,11 @@
     <Compile Include="Sprite.cs" />
     <Compile Include="SpriteDetails.cs" />
     <Compile Include="TetrisAttack.cs" />
+    <Compile Include="TetrisAttackServer\Block.cs" />
+    <Compile Include="TetrisAttackServer\BlockStates.cs" />
+    <Compile Include="TetrisAttackServer\BlockTypes.cs" />
+    <Compile Include="TetrisAttackServer\Board.cs" />
+    <Compile Include="TetrisAttackServer\Cursor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

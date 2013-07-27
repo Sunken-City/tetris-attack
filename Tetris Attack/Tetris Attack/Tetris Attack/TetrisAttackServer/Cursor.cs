@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace TetrisAttackServer
+namespace Tetris_Attack
 {
 	public class Cursor
 	{

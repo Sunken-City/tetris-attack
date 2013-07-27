@@ -9,20 +9,19 @@ namespace Tetris_Attack
 {
 	public class BlockComponent : Microsoft.Xna.Framework.DrawableGameComponent
 	{
-		public BlockTypes Type { get; set; }
-		public BlockStates State { get; set; }
-		public int Top { get; set; }
-		public int Left { get; set; }
-		public int Height { get; set; }
-		public int Width { get; set; }
 		Texture2D blockTexture;
 		private SpriteBatch blockBatch;
-		private List<LinkedList<Sprite>> blockLists = new List<LinkedList<Sprite>>();
+		Sprite[][] blocks = new Sprite[6][];
+		public Board board;
 
-		public BlockComponent(Game game)
+		public BlockComponent(Game game, Board b)
 			: base(game)
 		{
-
+			board = b;
+			for (int i = 0; i < 6; i++)
+			{
+				blocks[i] = new Sprite[9];
+			}
 		}
 
 		protected override void LoadContent()
@@ -34,13 +33,33 @@ namespace Tetris_Attack
 
 		public override void Initialize()
 		{
-			block = new Sprite(blockTexture, this.getBlockTexture());
 			base.Initialize();
+			//for (int i = 0; i < 6; i++)
+			//{
+			//    blocks[i] = new Sprite[9];
+			//    for (int j = 0; j < 9; j++)
+			//    {
+			//        Sprite block = new Sprite(blockTexture, new Rectangle(151, 72, 15, 15));
+			//        block.Scale = 3;
+			//        block.Position = new Vector2(i * 45, j * 45);
+			//        blocks[i][j] = block;
+			//    }
+			//}
 		}
 
 		public override void Update(GameTime gameTime)
 		{
-			// TODO: Add your update code here
+			for (int i = 0; i < 6; i++)
+			{
+				for (int j = 0; j < board.BlockLists.ElementAt(i).Count; j++)
+				{
+					var block = board.BlockLists.ElementAt(i).ElementAt(j);
+					Sprite newBlock = new Sprite(blockTexture, block.getBlockTexture());
+					newBlock.Scale = 3;
+					newBlock.Position = new Vector2(i * 45, j * 45);
+					blocks[i][j] = newBlock;
+				}
+			}
 
 			base.Update(gameTime);
 		}
@@ -48,45 +67,16 @@ namespace Tetris_Attack
 		public override void Draw(GameTime gameTime)
 		{
 			blockBatch.Begin(SpriteSortMode.FrontToBack, null);
-			block.Draw(gameTime, blockBatch);
+			for (int i = 0; i < 6; i++)
+			{
+				for (int j = 0; j < board.BlockLists.ElementAt(i).Count; j++)
+				{
+					blocks[i][j].Draw(gameTime, blockBatch);
+				}
+			}
 			blockBatch.End();
 			base.Draw(gameTime);
 		}
 
-		public bool IsLockedState()
-		{
-			return State == BlockStates.ClearingInProgress;
-		}
-
-		public Rectangle getBlockTexture()
-		{
-			Rectangle rect;
-			if (this.Type == BlockTypes.Star)
-			{
-				rect = new Rectangle(9, 10, 15, 15);
-			}
-			else if (this.Type == BlockTypes.Square)
-			{
-				rect = new Rectangle(30, 10, 15, 15);
-			}
-			else if (this.Type == BlockTypes.Triangle)
-			{
-				rect = new Rectangle(51, 10, 15, 15);
-			}
-			else if (this.Type == BlockTypes.Diamond)
-			{
-				rect = new Rectangle(72, 10, 15, 15);
-			}
-			else if (this.Type == BlockTypes.UpsideDownTriangle)
-			{
-				rect = new Rectangle(93, 10, 15, 15);
-			}
-			else
-			{
-				rect = new Rectangle(135, 10, 15, 15);
-			}
-
-			return rect;
-		}
 	}
 }
