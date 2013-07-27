@@ -11,7 +11,8 @@ namespace Tetris_Attack
 		Star = 1,
 		Square = 2,
 		Triangle = 3,
-		Diamond = 4,
-		UpsideDownTriangle = 5
+		Heart = 4,
+		Diamond = 5,
+		UpsideDownTriangle = 6
 	}
 }

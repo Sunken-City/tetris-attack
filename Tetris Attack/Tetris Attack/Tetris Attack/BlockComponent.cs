@@ -49,14 +49,14 @@ namespace Tetris_Attack
 
 		public override void Update(GameTime gameTime)
 		{
-			for (int i = 0; i < 6; i++)
+			for (int i = 5; i > -1; i--)
 			{
 				for (int j = 0; j < board.BlockLists.ElementAt(i).Count; j++)
 				{
 					var block = board.BlockLists.ElementAt(i).ElementAt(j);
 					Sprite newBlock = new Sprite(blockTexture, block.getBlockTexture());
 					newBlock.Scale = 3;
-					newBlock.Position = new Vector2(i * 45, j * 45);
+					newBlock.Position = new Vector2(225 - (i * 45), 360 - (j * 45));
 					blocks[i][j] = newBlock;
 				}
 			}

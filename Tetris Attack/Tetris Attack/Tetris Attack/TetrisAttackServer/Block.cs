@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Diagnostics;
 using Microsoft.Xna.Framework;
 
 namespace Tetris_Attack
 {
+	[DebuggerDisplay("{Type} {State}")]
 	public class Block
 	{
 		public BlockTypes Type { get; set; }
 		public BlockStates State { get; set; }
 		public int Top { get; set; }
-		public int Left{ get; set; }
+		public int Left { get; set; }
 		public int Height { get; set; }
 		public int Width { get; set; }
 
@@ -35,13 +33,17 @@ namespace Tetris_Attack
 			{
 				rect = new Rectangle(51, 10, 15, 15);
 			}
-			else if (this.Type == BlockTypes.Diamond)
+			else if (this.Type == BlockTypes.Heart)
 			{
 				rect = new Rectangle(72, 10, 15, 15);
 			}
-			else if (this.Type == BlockTypes.UpsideDownTriangle)
+			else if (this.Type == BlockTypes.Diamond)
 			{
 				rect = new Rectangle(93, 10, 15, 15);
+			}
+			else if (this.Type == BlockTypes.UpsideDownTriangle)
+			{
+				rect = new Rectangle(114, 10, 15, 15);
 			}
 			else
 			{

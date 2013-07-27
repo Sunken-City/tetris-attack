@@ -27,14 +27,14 @@ namespace Tetris_Attack
 		public TetrisAttack()
 		{
 			graphics = new GraphicsDeviceManager(this);
-			graphics.PreferredBackBufferHeight = 413;
+			graphics.PreferredBackBufferHeight = 405;
 			graphics.PreferredBackBufferWidth = 459;
 			Content.RootDirectory = "Content";
 			board = Board.BuildNewBoard();
 			Components.Add(backgroundComponent = new BackgroundComponent(this));
 			Components.Add(frameComponent = new FrameComponent(this));
 			Components.Add(blockComponent = new BlockComponent(this, board));
-			Components.Add(cursorComponent = new CursorComponent(this));
+			Components.Add(cursorComponent = new CursorComponent(this, board));
 			
 
 		}

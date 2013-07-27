@@ -21,12 +21,15 @@ namespace Tetris_Attack
 		Sprite cursor;
 		SpriteBatch cursorBatch;
 		TimeSpan timePerMove = TimeSpan.FromMilliseconds(400);
+		TimeSpan timePerSwap = TimeSpan.FromMilliseconds(700);
 		TimeSpan timePassed;
+		Cursor gameCursor;
+		Board board;
 
-		public CursorComponent(Game game)
+		public CursorComponent(Game game, Board b)
 			: base(game)
 		{
-			// TODO: Construct any child components here
+			board = b;
 		}
 
 		/// <summary>
@@ -40,6 +43,7 @@ namespace Tetris_Attack
 			cursor.Scale = 3;
 			cursor.Position = new Vector2(0, 0);
 			cursor.Origin = new Vector2(4, 4);
+			gameCursor = new Cursor();
 		}
 
 		protected override void LoadContent()
@@ -77,10 +81,17 @@ namespace Tetris_Attack
 				timePassed = TimeSpan.Zero;
 				cursor.Position.Y += 45;
 			}
-			if ((timePassed += gameTime.ElapsedGameTime) > timePerMove && ks.IsKeyDown(Keys.Space))
+			if ((timePassed += gameTime.ElapsedGameTime) > timePerSwap && ks.IsKeyDown(Keys.Space))
 			{
 				timePassed = TimeSpan.Zero;
-				//SwapBlocks
+				gameCursor.Top = (int)(8 - (cursor.Position.Y / 45));
+				gameCursor.Left = (int)(5 - cursor.Position.X / 45);
+				gameCursor.SwapBlocks(
+					board.BlockLists.ElementAt(gameCursor.Left),
+					board.BlockLists.ElementAt(gameCursor.Left).ElementAt(gameCursor.Top), 
+					board.BlockLists.ElementAt(gameCursor.Left - 1), 
+					board.BlockLists.ElementAt(gameCursor.Left - 1).ElementAt(gameCursor.Top)
+				);
 			}
 			if (cursor.Position.X > 224)
 				cursor.Position.X = 180;

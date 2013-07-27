@@ -13,12 +13,14 @@ namespace Tetris_Attack
 
 		public static Board BuildNewBoard()
 		{
-			int numberOfBlocksInTheList = 3;
+			
 			var blockLists = new System.Collections.Generic.List<System.Collections.Generic.LinkedList<Block>>();
 
 			for (int counter = 0; counter < maxNumberOfLists; counter++)
 			{
 				var linkedList = new System.Collections.Generic.LinkedList<Block>();
+
+				int numberOfBlocksInTheList = randomNumberGenerator.Next(0, 6);
 
 				for (int listCounter = 0; listCounter < numberOfBlocksInTheList; listCounter++)
 				{
@@ -26,7 +28,17 @@ namespace Tetris_Attack
 					linkedList.AddFirst(block);
 				}
 
-				blockLists.Add(linkedList);
+				for (int listCounter = numberOfBlocksInTheList; listCounter < 9; listCounter++)
+				{
+					var block = new Block()
+					{
+						State = BlockStates.AtRest,
+						Type = 0
+					};
+					linkedList.AddLast(block);
+				}
+
+					blockLists.Add(linkedList);
 			}
 
 			Board board = new Board()
@@ -42,7 +54,7 @@ namespace Tetris_Attack
 			return new Block()
 			{
 				State = BlockStates.AtRest,
-				Type = (BlockTypes)randomNumberGenerator.Next((int)BlockTypes.Star, (int)BlockTypes.UpsideDownTriangle)
+				Type = (BlockTypes)randomNumberGenerator.Next((int)BlockTypes.Star, (int)BlockTypes.UpsideDownTriangle + 1)
 			};
 		}
 
