@@ -92,6 +92,7 @@ namespace Tetris_Attack
 					board.BlockLists.ElementAt(gameCursor.Left - 1), 
 					board.BlockLists.ElementAt(gameCursor.Left - 1).ElementAt(gameCursor.Top)
 				);
+				board.Update();
 			}
 			if (cursor.Position.X > 224)
 				cursor.Position.X = 180;

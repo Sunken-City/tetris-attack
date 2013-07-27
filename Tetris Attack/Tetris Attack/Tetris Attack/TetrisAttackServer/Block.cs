@@ -21,7 +21,11 @@ namespace Tetris_Attack
 		public Rectangle getBlockTexture()
 		{
 			Rectangle rect;
-			if (this.Type == BlockTypes.Star)
+			if (this.Type == BlockTypes.Empty)
+			{
+				rect = new Rectangle(156, 10, 15, 15);
+			}
+			else if (this.Type == BlockTypes.Star)
 			{
 				rect = new Rectangle(9, 10, 15, 15);
 			}

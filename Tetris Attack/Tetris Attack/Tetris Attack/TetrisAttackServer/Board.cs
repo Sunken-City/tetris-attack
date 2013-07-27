@@ -86,5 +86,41 @@ namespace Tetris_Attack
 			return (from blockList in blockLists
 					select blockList.Count > MaxListLength).Any();
 		}
+
+		//public void Update()
+		//{
+		//    for (int i = 0; i < 6; i++)
+		//    {
+		//        int lastBlockType = (int)blockLists.ElementAt(i).ElementAt(0).Type;
+		//        int blockCounter = 0;
+		//        for (int j = 1; j < 9; j++)
+		//        {
+		//            if (lastBlockType == (int)blockLists.ElementAt(i).ElementAt(j).Type)
+		//            {
+		//                blockCounter++;
+		//            }
+		//            if (blockCounter == 3)
+		//            {
+		//                blockLists.ElementAt(i).Remove(blockLists.ElementAt(i).ElementAt(j));
+		//                blockLists.ElementAt(i).Remove(blockLists.ElementAt(i).ElementAt(j - 1));
+		//                blockLists.ElementAt(i).Remove(blockLists.ElementAt(i).ElementAt(j - 2));
+						
+		//            }
+		//        }
+		//    }
+		//}
+
+		//public void blocksFall(LinkedList<Block> blockList)
+		//{
+		//    for (int i = 0; i < 9; i++)
+		//    {
+		//        var block = blockList.ElementAt(i);
+		//        if (block.Type == BlockTypes.Empty)
+		//        {
+		//            blockList.Remove(block);
+		//            blockList.AddLast(block);
+		//        }
+		//    }
+		//}
 	}
 }

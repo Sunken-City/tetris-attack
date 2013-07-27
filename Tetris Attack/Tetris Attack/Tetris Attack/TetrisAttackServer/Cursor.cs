@@ -14,9 +14,24 @@ namespace Tetris_Attack
 		{
 			leftBlockList.AddBefore(leftBlockList.Find(leftBlock), rightBlock);
 			leftBlockList.Remove(leftBlockList.Find(leftBlock));
+			blocksFall(leftBlockList);
 
 			rightBlockList.AddBefore(rightBlockList.Find(rightBlock), leftBlock);
 			rightBlockList.Remove(rightBlock);
+			blocksFall(rightBlockList);
+		}
+
+		public void blocksFall(LinkedList<Block> blockList)
+		{
+			for (int i = 0; i < 9; i++)
+			{
+				var block = blockList.ElementAt(i);
+				if (block.Type == BlockTypes.Empty)
+				{
+					blockList.Remove(block);
+					blockList.AddLast(block);
+				}
+			}
 		}
 	}
 }
