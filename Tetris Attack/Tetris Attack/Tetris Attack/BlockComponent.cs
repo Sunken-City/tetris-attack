@@ -66,7 +66,7 @@ namespace Tetris_Attack
 
 		public override void Draw(GameTime gameTime)
 		{
-			blockBatch.Begin(SpriteSortMode.FrontToBack, null);
+			blockBatch.Begin(SpriteSortMode.FrontToBack, null, SamplerState.PointClamp, null, null);
 			for (int i = 0; i < 6; i++)
 			{
 				for (int j = 0; j < board.BlockLists.ElementAt(i).Count; j++)

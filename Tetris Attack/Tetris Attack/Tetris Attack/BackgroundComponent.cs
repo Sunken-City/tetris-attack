@@ -88,7 +88,7 @@ namespace Tetris_Attack
 
 		public override void Draw(GameTime gameTime)
 		{
-			bgBatch.Begin(SpriteSortMode.Deferred, null);
+			bgBatch.Begin(SpriteSortMode.Deferred, null, SamplerState.PointClamp, null, null);
 			for (int i = 0; i < 7; i++)
 			{
 				for (int j = 0; j < 10; j++)

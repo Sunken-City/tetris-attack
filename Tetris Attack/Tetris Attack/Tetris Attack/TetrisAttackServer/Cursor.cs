@@ -26,10 +26,9 @@ namespace Tetris_Attack
 			for (int i = 0; i < 9; i++)
 			{
 				var block = blockList.ElementAt(i);
-				if (block.Type == BlockTypes.Empty)
+				if (block.Type != BlockTypes.Empty)
 				{
-					blockList.Remove(block);
-					blockList.AddLast(block);
+
 				}
 			}
 		}

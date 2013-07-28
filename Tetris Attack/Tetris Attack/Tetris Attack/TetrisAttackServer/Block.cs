@@ -13,6 +13,13 @@ namespace Tetris_Attack
 		public int Height { get; set; }
 		public int Width { get; set; }
 
+		//Empty block is the default.
+		public Block()
+		{
+			State = BlockStates.AtRest;
+			Type = 0;
+		}
+
 		public bool IsLockedState()
 		{
 			return State == BlockStates.ClearingInProgress;

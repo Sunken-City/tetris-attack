@@ -30,11 +30,7 @@ namespace Tetris_Attack
 
 				for (int listCounter = numberOfBlocksInTheList; listCounter < 9; listCounter++)
 				{
-					var block = new Block()
-					{
-						State = BlockStates.AtRest,
-						Type = 0
-					};
+					var block = new Block();
 					linkedList.AddLast(block);
 				}
 
