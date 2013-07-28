@@ -20,7 +20,7 @@ namespace Tetris_Attack
 			{
 				var linkedList = new System.Collections.Generic.LinkedList<Block>();
 
-				int numberOfBlocksInTheList = randomNumberGenerator.Next(0, 6);
+				int numberOfBlocksInTheList = randomNumberGenerator.Next(3, 6);
 
 				for (int listCounter = 0; listCounter < numberOfBlocksInTheList; listCounter++)
 				{
@@ -85,6 +85,7 @@ namespace Tetris_Attack
 
 		public void Update()
 		{
+			//First, check for vertical clearings.
 			for (int i = 0; i < 6; i++)
 			{
 				int lastBlockType = (int)blockLists.ElementAt(i).ElementAt(0).Type;
@@ -108,6 +109,33 @@ namespace Tetris_Attack
 						blockLists.ElementAt(i).AddLast(new Block());
 						blockLists.ElementAt(i).AddLast(new Block());
 						blockLists.ElementAt(i).AddLast(new Block());
+					}
+				}
+			}
+			//Now, check horizontally
+			for (int i = 0; i < 9; i++)
+			{
+				int lastBlockType = (int)blockLists.ElementAt(0).ElementAt(i).Type;
+				int blockCounter = 1;
+				for (int j = 1; j < 6; j++)
+				{
+					if (lastBlockType == (int)blockLists.ElementAt(j).ElementAt(i).Type)
+					{
+						blockCounter++;
+					}
+					else
+					{
+						blockCounter = 1;
+						lastBlockType = (int)blockLists.ElementAt(j).ElementAt(i).Type;
+					}
+					if (blockCounter == 3)
+					{
+						blockLists.ElementAt(j).Remove(blockLists.ElementAt(j).ElementAt(i));
+						blockLists.ElementAt(j - 1).Remove(blockLists.ElementAt(j - 1).ElementAt(i));
+						blockLists.ElementAt(j - 2).Remove(blockLists.ElementAt(j - 2).ElementAt(i));
+						blockLists.ElementAt(j).AddLast(new Block());
+						blockLists.ElementAt(j - 1).AddLast(new Block());
+						blockLists.ElementAt(j - 2).AddLast(new Block());
 					}
 				}
 			}
