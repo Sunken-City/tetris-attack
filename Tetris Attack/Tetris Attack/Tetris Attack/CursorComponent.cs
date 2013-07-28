@@ -20,7 +20,7 @@ namespace Tetris_Attack
 		Texture2D cursorTexture;
 		Sprite cursor;
 		SpriteBatch cursorBatch;
-		TimeSpan timePerMove = TimeSpan.FromMilliseconds(400);
+		TimeSpan timePerMove = TimeSpan.FromMilliseconds(500);
 		TimeSpan timePerSwap = TimeSpan.FromMilliseconds(700);
 		TimeSpan timePassed;
 		Cursor gameCursor;
