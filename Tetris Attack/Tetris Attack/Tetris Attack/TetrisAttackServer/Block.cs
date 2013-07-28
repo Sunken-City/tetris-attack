@@ -6,6 +6,8 @@ namespace Tetris_Attack
 	[DebuggerDisplay("{Type} {State}")]
 	public class Block
 	{
+		private int p;
+
 		public BlockTypes Type { get; set; }
 		public BlockStates State { get; set; }
 		public int Top { get; set; }
@@ -18,6 +20,13 @@ namespace Tetris_Attack
 		{
 			State = BlockStates.AtRest;
 			Type = 0;
+		}
+
+		//Create a block with a specific type.
+		public Block(int type)
+		{
+			State = BlockStates.AtRest;
+			Type = (BlockTypes)type;
 		}
 
 		public bool IsLockedState()

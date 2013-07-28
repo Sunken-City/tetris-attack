@@ -47,11 +47,7 @@ namespace Tetris_Attack
 
 		private static Block GetNewRandomBlock()
 		{
-			return new Block()
-			{
-				State = BlockStates.AtRest,
-				Type = (BlockTypes)randomNumberGenerator.Next((int)BlockTypes.Star, (int)BlockTypes.UpsideDownTriangle + 1)
-			};
+			return new Block(randomNumberGenerator.Next((int)BlockTypes.Star, (int)BlockTypes.UpsideDownTriangle + 1));
 		}
 
 		public int Top { get; set; }
@@ -72,8 +68,16 @@ namespace Tetris_Attack
 		{
 			foreach (var blockList in blockLists)
 			{
-				var newBlockToBeAdded = new Block();
-				blockList.AddBefore(blockList.First, newBlockToBeAdded);
+				var newBlockToBeAdded = GetNewRandomBlock();
+				if (blockList.Last.Value.Type == BlockTypes.Empty)
+				{
+					blockList.RemoveLast();
+					blockList.AddFirst(newBlockToBeAdded);
+				}
+				else
+				{
+					//Lose
+				}
 			}
 		}
 

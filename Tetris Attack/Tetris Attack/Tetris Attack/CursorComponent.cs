@@ -94,6 +94,12 @@ namespace Tetris_Attack
 				);
 				board.Update();
 			}
+			if ((timePassed += gameTime.ElapsedGameTime) > timePerSwap && (ks.IsKeyDown(Keys.LeftShift) || ks.IsKeyDown(Keys.RightShift)))
+			{
+				timePassed = TimeSpan.Zero;
+				board.PushBlocks();
+				board.Update();
+			}
 			if (cursor.Position.X > 224)
 				cursor.Position.X = 180;
 			if (cursor.Position.X < 0)
