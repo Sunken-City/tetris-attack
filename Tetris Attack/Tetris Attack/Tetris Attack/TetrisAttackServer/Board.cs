@@ -102,21 +102,17 @@ namespace Tetris_Attack
 					}
 					else
 					{
+						if (blockCounter > 2)
+						{
+							removeVertical(i, j - 1, blockCounter - 1);
+						}
 						blockCounter = 1;
 						lastBlockType = (int)blockLists.ElementAt(i).ElementAt(j).Type;
 					}
-					if (blockCounter == 3)
-					{
-						blockLists.ElementAt(i).Remove(blockLists.ElementAt(i).ElementAt(j));
-						blockLists.ElementAt(i).Remove(blockLists.ElementAt(i).ElementAt(j - 1));
-						blockLists.ElementAt(i).Remove(blockLists.ElementAt(i).ElementAt(j - 2));
-						blockLists.ElementAt(i).AddLast(new Block());
-						blockLists.ElementAt(i).AddLast(new Block());
-						blockLists.ElementAt(i).AddLast(new Block());
-					}
+
 				}
 			}
-			//Now, check horizontally
+			//Now, check horizontally.
 			for (int i = 0; i < 9; i++)
 			{
 				int lastBlockType = (int)blockLists.ElementAt(0).ElementAt(i).Type;
@@ -129,33 +125,36 @@ namespace Tetris_Attack
 					}
 					else
 					{
+						if (blockCounter > 2)
+						{
+							removeHorizontal(i, j - 1, blockCounter - 1);
+						}
 						blockCounter = 1;
 						lastBlockType = (int)blockLists.ElementAt(j).ElementAt(i).Type;
-					}
-					if (blockCounter == 3)
-					{
-						blockLists.ElementAt(j).Remove(blockLists.ElementAt(j).ElementAt(i));
-						blockLists.ElementAt(j - 1).Remove(blockLists.ElementAt(j - 1).ElementAt(i));
-						blockLists.ElementAt(j - 2).Remove(blockLists.ElementAt(j - 2).ElementAt(i));
-						blockLists.ElementAt(j).AddLast(new Block());
-						blockLists.ElementAt(j - 1).AddLast(new Block());
-						blockLists.ElementAt(j - 2).AddLast(new Block());
 					}
 				}
 			}
 		}
 
-		//public void blocksFall(LinkedList<Block> blockList)
-		//{
-		//    for (int i = 0; i < 9; i++)
-		//    {
-		//        var block = blockList.ElementAt(i);
-		//        if (block.Type == BlockTypes.Empty)
-		//        {
-		//            blockList.Remove(block);
-		//            blockList.AddLast(block);
-		//        }
-		//    }
-		//}
+		public void removeVertical(int firstIndex, int secondIndex, int iterations)
+		{
+			if (iterations != 0)
+			{
+				removeVertical(firstIndex, secondIndex, iterations - 1);
+			}
+			blockLists.ElementAt(firstIndex).Remove(blockLists.ElementAt(firstIndex).ElementAt(secondIndex - iterations));
+			blockLists.ElementAt(firstIndex).AddLast(new Block());
+		}
+
+		public void removeHorizontal(int firstIndex, int secondIndex, int iterations)
+		{
+			if (iterations != 0)
+			{
+				removeHorizontal(firstIndex, secondIndex, iterations - 1);
+			}
+			blockLists.ElementAt(secondIndex - iterations).Remove(blockLists.ElementAt(secondIndex - iterations).ElementAt(firstIndex));
+			blockLists.ElementAt(secondIndex - iterations).AddLast(new Block());
+		}
+
 	}
 }

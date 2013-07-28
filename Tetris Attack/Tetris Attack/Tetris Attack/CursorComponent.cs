@@ -25,6 +25,10 @@ namespace Tetris_Attack
 		TimeSpan timePassed;
 		Cursor gameCursor;
 		Board board;
+		private SoundEffect moveSound;
+		private SoundEffectInstance moveSoundInstance;
+		private SoundEffect swapSound;
+		private SoundEffectInstance swapSoundInstance;
 
 		public CursorComponent(Game game, Board b)
 			: base(game)
@@ -44,11 +48,15 @@ namespace Tetris_Attack
 			cursor.Position = new Vector2(0, 0);
 			cursor.Origin = new Vector2(4, 4);
 			gameCursor = new Cursor();
+			moveSoundInstance = moveSound.CreateInstance();
+			swapSoundInstance = swapSound.CreateInstance();
 		}
 
 		protected override void LoadContent()
 		{
 			cursorTexture = Game.Content.Load<Texture2D>("Sprites/Totodile");
+			moveSound = Game.Content.Load<SoundEffect>("Audio/Move");
+			swapSound = Game.Content.Load<SoundEffect>("Audio/Swap");
 			cursorBatch = new SpriteBatch(Game.GraphicsDevice);
 
 			base.LoadContent();
@@ -65,21 +73,37 @@ namespace Tetris_Attack
 			{
 				timePassed = TimeSpan.Zero;
 				cursor.Position.X += 45;
+				if (cursor.Position.X > 224)
+					cursor.Position.X = 180;
+				else
+					moveSoundInstance.Play();
 			}
 			else if ((timePassed += gameTime.ElapsedGameTime) > timePerMove && ks.IsKeyDown(Keys.Left))
 			{
 				timePassed = TimeSpan.Zero;
 				cursor.Position.X -= 45;
+				if (cursor.Position.X < 0)
+					cursor.Position.X = 0;
+				else
+					moveSoundInstance.Play();
 			}
 			if ((timePassed += gameTime.ElapsedGameTime) > timePerMove && ks.IsKeyDown(Keys.Up))
 			{
 				timePassed = TimeSpan.Zero;
 				cursor.Position.Y -= 45;
+				if (cursor.Position.Y < 0)
+					cursor.Position.Y = 0;
+				else
+					moveSoundInstance.Play();
 			}
 			if ((timePassed += gameTime.ElapsedGameTime) > timePerMove && ks.IsKeyDown(Keys.Down))
 			{
 				timePassed = TimeSpan.Zero;
 				cursor.Position.Y += 45;
+				if (cursor.Position.Y > 404)
+					cursor.Position.Y = 360;
+				else
+					moveSoundInstance.Play();
 			}
 			if ((timePassed += gameTime.ElapsedGameTime) > timePerSwap && ks.IsKeyDown(Keys.Space))
 			{
@@ -92,6 +116,7 @@ namespace Tetris_Attack
 					board.BlockLists.ElementAt(gameCursor.Left - 1), 
 					board.BlockLists.ElementAt(gameCursor.Left - 1).ElementAt(gameCursor.Top)
 				);
+				swapSoundInstance.Play();
 				board.Update();
 			}
 			if ((timePassed += gameTime.ElapsedGameTime) > timePerSwap && (ks.IsKeyDown(Keys.LeftShift) || ks.IsKeyDown(Keys.RightShift)))
@@ -100,14 +125,7 @@ namespace Tetris_Attack
 				board.PushBlocks();
 				board.Update();
 			}
-			if (cursor.Position.X > 224)
-				cursor.Position.X = 180;
-			if (cursor.Position.X < 0)
-				cursor.Position.X = 0;
-			if (cursor.Position.Y > 404)
-				cursor.Position.Y = 360;
-			if (cursor.Position.Y < 0)
-				cursor.Position.Y = 0;
+
 			base.Update(gameTime);
 		}
 
