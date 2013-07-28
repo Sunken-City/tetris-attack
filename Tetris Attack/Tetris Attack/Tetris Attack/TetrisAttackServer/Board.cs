@@ -96,7 +96,7 @@ namespace Tetris_Attack
 				int blockCounter = 1;
 				for (int j = 1; j < 9; j++)
 				{
-					if (lastBlockType == (int)blockLists.ElementAt(i).ElementAt(j).Type)
+					if (lastBlockType != 0 && lastBlockType == (int)blockLists.ElementAt(i).ElementAt(j).Type)
 					{
 						blockCounter++;
 					}
@@ -109,7 +109,10 @@ namespace Tetris_Attack
 						blockCounter = 1;
 						lastBlockType = (int)blockLists.ElementAt(i).ElementAt(j).Type;
 					}
-
+					if (j == 8 && blockCounter > 2)
+					{
+						removeVertical(i, j, blockCounter - 1);
+					}
 				}
 			}
 			//Now, check horizontally.
@@ -119,7 +122,7 @@ namespace Tetris_Attack
 				int blockCounter = 1;
 				for (int j = 1; j < 6; j++)
 				{
-					if (lastBlockType == (int)blockLists.ElementAt(j).ElementAt(i).Type)
+					if (lastBlockType != 0 && lastBlockType == (int)blockLists.ElementAt(j).ElementAt(i).Type)
 					{
 						blockCounter++;
 					}
@@ -131,6 +134,10 @@ namespace Tetris_Attack
 						}
 						blockCounter = 1;
 						lastBlockType = (int)blockLists.ElementAt(j).ElementAt(i).Type;
+					}
+					if (j == 5 && blockCounter > 2)
+					{
+						removeHorizontal(i, j, blockCounter - 1);
 					}
 				}
 			}
