@@ -157,23 +157,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Audio\Music\Pokemon Puzzle Challenge Music - Azalea &amp; Blackthorn Gym.mp3">
-      <Name>Pokemon Puzzle Challenge Music - Azalea &amp; Blackthorn Gym</Name>
+    <Compile Include="Audio\Music\Azalea &amp; Blackthorn Gym.mp3">
+      <Name>Azalea &amp; Blackthorn Gym</Name>
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
     </Compile>
-    <Compile Include="Audio\Music\Pokemon Puzzle Challenge Music - Danger! %28Gym Battle%29.mp3">
-      <Name>Pokemon Puzzle Challenge Music - Danger! %28Gym Battle%29</Name>
+    <Compile Include="Audio\Music\Danger %28Gym Battle%29.mp3">
+      <Name>Danger %28Gym Battle%29</Name>
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
     </Compile>
-    <Compile Include="Audio\Music\Pokemon Puzzle Challenge Music - Danger! %28Lance Battle%29.mp3">
-      <Name>Pokemon Puzzle Challenge Music - Danger! %28Lance Battle%29</Name>
+    <Compile Include="Audio\Music\Danger %28Lance Battle%29.mp3">
+      <Name>Danger %28Lance Battle%29</Name>
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
     </Compile>
-    <Compile Include="Audio\Music\Pokemon Puzzle Challenge Music - Mahogany Gym.mp3">
-      <Name>Pokemon Puzzle Challenge Music - Mahogany Gym</Name>
+    <Compile Include="Audio\Music\Mahogany Gym.mp3">
+      <Name>Mahogany Gym</Name>
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
     </Compile>

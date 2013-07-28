@@ -26,11 +26,11 @@ C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Atta
 C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Move.xnb
 C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Start.xnb
 C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Swap.xnb
-C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Pokemon Puzzle Challenge Music - Azalea & Blackthorn Gym.xnb
-C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Pokemon Puzzle Challenge Music - Danger! (Gym Battle).xnb
-C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Pokemon Puzzle Challenge Music - Danger! (Lance Battle).xnb
-C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Pokemon Puzzle Challenge Music - Mahogany Gym.xnb
-C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Pokemon Puzzle Challenge Music - Azalea & Blackthorn Gym.wma
-C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Pokemon Puzzle Challenge Music - Danger! (Gym Battle).wma
-C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Pokemon Puzzle Challenge Music - Danger! (Lance Battle).wma
-C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Pokemon Puzzle Challenge Music - Mahogany Gym.wma
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Azalea & Blackthorn Gym.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Danger (Gym Battle).xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Danger (Lance Battle).xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Mahogany Gym.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Azalea & Blackthorn Gym.wma
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Danger (Gym Battle).wma
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Danger (Lance Battle).wma
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Debug\Content\Audio\Music\Mahogany Gym.wma

@@ -10,6 +10,7 @@ namespace Tetris_Attack
 		private const int MaxListLength = 10;
 		private const int maxNumberOfLists = 6;
 		private static Random randomNumberGenerator = new Random((int)DateTime.Now.Ticks);
+		public bool inDanger = false;
 
 		public static Board BuildNewBoard()
 		{
@@ -79,6 +80,7 @@ namespace Tetris_Attack
 					//Lose
 				}
 			}
+			Update();
 		}
 
 		public bool IsLoseConditionMet()
@@ -139,6 +141,20 @@ namespace Tetris_Attack
 					{
 						removeHorizontal(i, j, blockCounter - 1);
 					}
+				}
+			}
+			checkForDanger();
+		}
+
+		private void checkForDanger()
+		{
+			inDanger = false;
+			for (int i = 0; i < 6; i++)
+			{
+				if (blockLists.ElementAt(i).ElementAt(6).Type != (BlockTypes)0)
+				{
+					inDanger = true;
+					break;
 				}
 			}
 		}

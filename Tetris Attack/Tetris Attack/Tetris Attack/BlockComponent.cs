@@ -34,17 +34,6 @@ namespace Tetris_Attack
 		public override void Initialize()
 		{
 			base.Initialize();
-			//for (int i = 0; i < 6; i++)
-			//{
-			//    blocks[i] = new Sprite[9];
-			//    for (int j = 0; j < 9; j++)
-			//    {
-			//        Sprite block = new Sprite(blockTexture, new Rectangle(151, 72, 15, 15));
-			//        block.Scale = 3;
-			//        block.Position = new Vector2(i * 45, j * 45);
-			//        blocks[i][j] = block;
-			//    }
-			//}
 		}
 
 		public override void Update(GameTime gameTime)
