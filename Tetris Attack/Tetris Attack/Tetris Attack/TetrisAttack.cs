@@ -1,10 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
@@ -45,6 +40,7 @@ namespace Tetris_Attack
 		protected override void Initialize()
 		{
 			base.Initialize();
+			MediaPlayer.IsRepeating = true;
 			MediaPlayer.Play(chill);
 		}
 
@@ -52,7 +48,7 @@ namespace Tetris_Attack
 		{
 			// Create a new SpriteBatch, which can be used to draw textures.
 			spriteBatch = new SpriteBatch(GraphicsDevice);
-			chill = Content.Load<Song>("Audio/Music/Azalea & Blackthorn Gym");
+			chill = Content.Load<Song>("Audio/Music/Mahogany Gym");
 			fever = Content.Load<Song>("Audio/Music/Danger (Gym Battle)");
 		}
 

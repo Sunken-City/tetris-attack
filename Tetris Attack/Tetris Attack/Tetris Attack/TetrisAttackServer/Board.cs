@@ -11,6 +11,7 @@ namespace Tetris_Attack
 		private const int maxNumberOfLists = 6;
 		private static Random randomNumberGenerator = new Random((int)DateTime.Now.Ticks);
 		public bool inDanger = false;
+		public int score = 0;
 
 		public static Board BuildNewBoard()
 		{
@@ -107,6 +108,7 @@ namespace Tetris_Attack
 						if (blockCounter > 2)
 						{
 							removeVertical(i, j - 1, blockCounter - 1);
+							score = score + (10 * blockCounter);
 						}
 						blockCounter = 1;
 						lastBlockType = (int)blockLists.ElementAt(i).ElementAt(j).Type;
@@ -114,6 +116,7 @@ namespace Tetris_Attack
 					if (j == 8 && blockCounter > 2)
 					{
 						removeVertical(i, j, blockCounter - 1);
+						score = score + (10 * blockCounter);
 					}
 				}
 			}
@@ -133,6 +136,7 @@ namespace Tetris_Attack
 						if (blockCounter > 2)
 						{
 							removeHorizontal(i, j - 1, blockCounter - 1);
+							score = score + (10 * blockCounter);
 						}
 						blockCounter = 1;
 						lastBlockType = (int)blockLists.ElementAt(j).ElementAt(i).Type;
@@ -140,6 +144,7 @@ namespace Tetris_Attack
 					if (j == 5 && blockCounter > 2)
 					{
 						removeHorizontal(i, j, blockCounter - 1);
+						score = score + (10 * blockCounter);
 					}
 				}
 			}

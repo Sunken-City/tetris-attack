@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Sprites\Blocks.png</Source>
+      <Name>Sprites\Blocks</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Blocks.xnb</Output>
+      <Time>2013-07-26T20:12:55.7961403-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Chikorita.png</Source>
+      <Name>Sprites\Chikorita</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Chikorita.xnb</Output>
+      <Time>2013-07-25T10:08:15.0047361-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Cyndaquil.png</Source>
+      <Name>Sprites\Cyndaquil</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Cyndaquil.xnb</Output>
+      <Time>2013-07-25T10:08:15.0347391-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Gym Intro Screens.png</Source>
+      <Name>Sprites\Gym Intro Screens</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Gym Intro Screens.xnb</Output>
+      <Time>2013-07-25T10:08:15.0807437-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Gym Stages.png</Source>
+      <Name>Sprites\Gym Stages</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Gym Stages.xnb</Output>
+      <Time>2013-07-25T10:08:15.1077464-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Hero.png</Source>
+      <Name>Sprites\Hero</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Hero.xnb</Output>
+      <Time>2013-07-25T10:08:15.123748-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Marill.png</Source>
+      <Name>Sprites\Marill</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Marill.xnb</Output>
+      <Time>2013-07-25T10:08:15.1607517-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Pikachu.png</Source>
+      <Name>Sprites\Pikachu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Pikachu.xnb</Output>
+      <Time>2013-07-25T10:08:15.1847541-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Pokemon Mugshots.png</Source>
+      <Name>Sprites\Pokemon Mugshots</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Pokemon Mugshots.xnb</Output>
+      <Time>2013-07-25T10:08:15.1987555-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Portraits.png</Source>
+      <Name>Sprites\Portraits</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Portraits.xnb</Output>
+      <Time>2013-07-25T10:08:15.2197576-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Totodile.png</Source>
+      <Name>Sprites\Totodile</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Totodile.xnb</Output>
+      <Time>2013-07-28T15:58:53.6931592-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\WinLose Screen.png</Source>
+      <Name>Sprites\WinLose Screen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\WinLose Screen.xnb</Output>
+      <Time>2013-07-25T10:08:15.2697626-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Awooga.wav</Source>
+      <Name>Audio\Awooga</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Awooga.xnb</Output>
+      <Time>2013-07-26T14:01:14.2599918-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Countdown.wav</Source>
+      <Name>Audio\Countdown</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Countdown.xnb</Output>
+      <Time>2013-07-26T14:01:14.3139972-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Fall.wav</Source>
+      <Name>Audio\Fall</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Fall.xnb</Output>
+      <Time>2013-07-26T14:01:14.3259984-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Good1.wav</Source>
+      <Name>Audio\Good1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Good1.xnb</Output>
+      <Time>2013-07-26T14:01:14.3980056-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Good2.wav</Source>
+      <Name>Audio\Good2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Good2.xnb</Output>
+      <Time>2013-07-26T14:01:14.4130071-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Good3.wav</Source>
+      <Name>Audio\Good3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Good3.xnb</Output>
+      <Time>2013-07-26T14:01:14.4530111-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Good4.wav</Source>
+      <Name>Audio\Good4</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Good4.xnb</Output>
+      <Time>2013-07-26T14:01:14.5150173-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Move.wav</Source>
+      <Name>Audio\Move</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Move.xnb</Output>
+      <Time>2013-07-26T14:01:14.5530211-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Start.wav</Source>
+      <Name>Audio\Start</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Start.xnb</Output>
+      <Time>2013-07-26T14:01:14.5970255-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Swap.wav</Source>
+      <Name>Audio\Swap</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Swap.xnb</Output>
+      <Time>2013-07-26T14:01:14.6110269-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Music\Azalea &amp; Blackthorn Gym.mp3</Source>
+      <Name>Audio\Music\Azalea &amp; Blackthorn Gym</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Music\Azalea &amp; Blackthorn Gym.xnb</Output>
+      <Extra>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Music\Azalea &amp; Blackthorn Gym.wma</Extra>
+      <Time>2013-07-26T14:01:55.236089-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Music\Danger (Gym Battle).mp3</Source>
+      <Name>Audio\Music\Danger (Gym Battle)</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Music\Danger (Gym Battle).xnb</Output>
+      <Extra>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Music\Danger (Gym Battle).wma</Extra>
+      <Time>2013-07-26T14:01:55.3030957-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Music\Danger (Lance Battle).mp3</Source>
+      <Name>Audio\Music\Danger (Lance Battle)</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Music\Danger (Lance Battle).xnb</Output>
+      <Extra>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Music\Danger (Lance Battle).wma</Extra>
+      <Time>2013-07-26T14:01:55.3671021-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Music\Mahogany Gym.mp3</Source>
+      <Name>Audio\Music\Mahogany Gym</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Music\Mahogany Gym.xnb</Output>
+      <Extra>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Music\Mahogany Gym.wma</Extra>
+      <Time>2013-07-26T14:01:55.4671121-05:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Release</BuildConfiguration>
+      <CompressContent>true</CompressContent>
+      <RootDirectory>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris AttackContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris AttackContent\obj\x86\Release\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2013-05-23T10:47:28.4144646-05:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

@@ -1,0 +1,56 @@
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Blocks.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Chikorita.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Cyndaquil.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Gym Intro Screens.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Gym Stages.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Hero.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Marill.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Pikachu.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Pokemon Mugshots.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Portraits.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Totodile.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\WinLose Screen.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Awooga.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Countdown.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Fall.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Good1.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Good2.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Good3.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Good4.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Move.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Start.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Swap.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Music\Azalea & Blackthorn Gym.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Music\Danger (Gym Battle).xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Music\Danger (Lance Battle).xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Music\Mahogany Gym.xnb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Music\Azalea & Blackthorn Gym.wma
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Music\Danger (Gym Battle).wma
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Music\Danger (Lance Battle).wma
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Audio\Music\Mahogany Gym.wma
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Tetris Attack.exe.manifest
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Tetris Attack.application
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Tetris Attack.exe
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Tetris Attack.pdb
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Microsoft.Xna.Framework.dll
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Microsoft.Xna.Framework.Game.dll
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.dll
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Microsoft.Xna.Framework.Net.dll
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Microsoft.Xna.Framework.Storage.dll
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Microsoft.Xna.Framework.Video.dll
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Microsoft.Xna.Framework.Xact.dll
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Microsoft.Xna.Framework.xml
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Microsoft.Xna.Framework.Game.xml
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.xml
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Microsoft.Xna.Framework.Xact.xml
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Microsoft.Xna.Framework.Video.xml
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Microsoft.Xna.Framework.Net.xml
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Microsoft.Xna.Framework.Storage.xml
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\obj\x86\Release\Tetris Attack.exe.manifest
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\obj\x86\Release\Tetris Attack.application
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\obj\x86\Release\Tetris Attack.exe
+C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\obj\x86\Release\Tetris Attack.pdb
