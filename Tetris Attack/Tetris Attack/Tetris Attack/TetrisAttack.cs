@@ -45,6 +45,7 @@ namespace Tetris_Attack
 		protected override void Initialize()
 		{
 			base.Initialize();
+			MediaPlayer.Play(chill);
 		}
 
 		protected override void LoadContent()
