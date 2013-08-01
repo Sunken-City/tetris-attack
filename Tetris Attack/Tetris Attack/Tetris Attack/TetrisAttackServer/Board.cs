@@ -12,6 +12,7 @@ namespace Tetris_Attack
 		private static Random randomNumberGenerator = new Random((int)DateTime.Now.Ticks);
 		public bool inDanger = false;
 		public int score = 0;
+		public Cursor cursor = new Cursor();
 
 		public static Board BuildNewBoard()
 		{

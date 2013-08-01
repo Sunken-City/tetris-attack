@@ -144,14 +144,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tetris Attack.exe" size="19456">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tetris Attack.exe" size="19968">
       <assemblyIdentity name="Tetris Attack" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>gicPlGv7IG5eh2/+lIiOiN1H2Y0=</dsig:DigestValue>
+        <dsig:DigestValue>y85bY61MOhceHMR0zmJt27xb5H8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -407,13 +407,13 @@
       <dsig:DigestValue>9ICMSODxI3C6v+rn4GLCWJai9Ts=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\Sprites\Totodile.xnb" size="8064">
+  <file name="Content\Sprites\Totodile.xnb" size="7970">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>USPcGc9qnWt86XXibZlxwxKCFu8=</dsig:DigestValue>
+      <dsig:DigestValue>iQRuYkA1C2h3h5gXoQ1zGiwe2vs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Sprites\WinLose Screen.xnb" size="7184">

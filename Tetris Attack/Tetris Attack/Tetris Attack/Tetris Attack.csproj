@@ -132,6 +132,7 @@
     <Compile Include="TetrisAttackServer\BlockTypes.cs" />
     <Compile Include="TetrisAttackServer\Board.cs" />
     <Compile Include="TetrisAttackServer\Cursor.cs" />
+    <Compile Include="TextComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

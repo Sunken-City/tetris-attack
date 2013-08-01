@@ -10,6 +10,7 @@ namespace Tetris_Attack
 	{
 		Texture2D frameTexture;
 		Sprite frame;
+		Sprite pokemon;
 		SpriteBatch frameBatch;
 
 		public FrameComponent(Game game)
@@ -28,8 +29,12 @@ namespace Tetris_Attack
 			frame = new Sprite(frameTexture, new Rectangle(10, 10, 63, 143));
 			frame.Scale = 3;
 			frame.Position = new Vector2(270, 0);
+			frame.ZLayer = 1f;
+			pokemon = new Sprite(frameTexture, new Rectangle(198, 55, 34, 34));
+			pokemon.Scale = 3;
+			pokemon.Position = new Vector2(315,237);
 			frame.ZLayer = 0f;
-
+			pokemon.Active = true;
 		}
 
 		protected override void LoadContent()
@@ -52,8 +57,9 @@ namespace Tetris_Attack
 
 		public override void Draw(GameTime gameTime)
 		{
-			frameBatch.Begin(SpriteSortMode.FrontToBack, null);
+			frameBatch.Begin(SpriteSortMode.Deferred, null, SamplerState.PointClamp, null, null);
 			frame.Draw(gameTime, frameBatch);
+			pokemon.Draw(gameTime, frameBatch);
 			frameBatch.End();
 			base.Draw(gameTime);
 		}

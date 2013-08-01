@@ -13,12 +13,11 @@ namespace Tetris_Attack
 	public class CursorComponent : Microsoft.Xna.Framework.DrawableGameComponent
 	{
 		Texture2D cursorTexture;
-		Sprite cursor;
+		Sprite cursorSprite;
 		SpriteBatch cursorBatch;
 		TimeSpan timePerMove = TimeSpan.FromMilliseconds(500);
 		TimeSpan timePerSwap = TimeSpan.FromMilliseconds(700);
 		TimeSpan timePassed;
-		Cursor gameCursor;
 		Board board;
 		private SoundEffect moveSound;
 		private SoundEffectInstance moveSoundInstance;
@@ -38,11 +37,13 @@ namespace Tetris_Attack
 		public override void Initialize()
 		{
 			base.Initialize();
-			cursor = new Sprite(cursorTexture, new Rectangle(139, 35, 38, 22));
-			cursor.Scale = 3;
-			cursor.Position = new Vector2(0, 0);
-			cursor.Origin = new Vector2(4, 4);
-			gameCursor = new Cursor();
+			cursorSprite = new Sprite(cursorTexture, new Rectangle(139, 9, 38, 22), 2, false, 4);
+			cursorSprite.AnimationInterval = TimeSpan.FromMilliseconds(500);
+			cursorSprite.Scale = 3;
+			cursorSprite.Position = new Vector2(0, 0);
+			cursorSprite.Origin = new Vector2(4, 4);
+			cursorSprite.Active = true;
+			board.cursor = new Cursor();
 			moveSoundInstance = moveSound.CreateInstance();
 			swapSoundInstance = swapSound.CreateInstance();
 		}
@@ -63,53 +64,54 @@ namespace Tetris_Attack
 		/// <param name="gameTime">Provides a snapshot of timing values.</param>
 		public override void Update(GameTime gameTime)
 		{
+			cursorSprite.Update(gameTime);
 			var ks = Keyboard.GetState();
 			if ((timePassed += gameTime.ElapsedGameTime) > timePerMove && ks.IsKeyDown(Keys.Right))
 			{
 				timePassed = TimeSpan.Zero;
-				cursor.Position.X += 45;
-				if (cursor.Position.X > 224)
-					cursor.Position.X = 180;
+				cursorSprite.Position.X += 45;
+				if (cursorSprite.Position.X > 224)
+					cursorSprite.Position.X = 180;
 				else
 					moveSoundInstance.Play();
 			}
 			else if ((timePassed += gameTime.ElapsedGameTime) > timePerMove && ks.IsKeyDown(Keys.Left))
 			{
 				timePassed = TimeSpan.Zero;
-				cursor.Position.X -= 45;
-				if (cursor.Position.X < 0)
-					cursor.Position.X = 0;
+				cursorSprite.Position.X -= 45;
+				if (cursorSprite.Position.X < 0)
+					cursorSprite.Position.X = 0;
 				else
 					moveSoundInstance.Play();
 			}
 			if ((timePassed += gameTime.ElapsedGameTime) > timePerMove && ks.IsKeyDown(Keys.Up))
 			{
 				timePassed = TimeSpan.Zero;
-				cursor.Position.Y -= 45;
-				if (cursor.Position.Y < 0)
-					cursor.Position.Y = 0;
+				cursorSprite.Position.Y -= 45;
+				if (cursorSprite.Position.Y < 0)
+					cursorSprite.Position.Y = 0;
 				else
 					moveSoundInstance.Play();
 			}
 			if ((timePassed += gameTime.ElapsedGameTime) > timePerMove && ks.IsKeyDown(Keys.Down))
 			{
 				timePassed = TimeSpan.Zero;
-				cursor.Position.Y += 45;
-				if (cursor.Position.Y > 404)
-					cursor.Position.Y = 360;
+				cursorSprite.Position.Y += 45;
+				if (cursorSprite.Position.Y > 404)
+					cursorSprite.Position.Y = 360;
 				else
 					moveSoundInstance.Play();
 			}
 			if ((timePassed += gameTime.ElapsedGameTime) > timePerSwap && ks.IsKeyDown(Keys.Space))
 			{
 				timePassed = TimeSpan.Zero;
-				gameCursor.Top = (int)(8 - (cursor.Position.Y / 45));
-				gameCursor.Left = (int)(5 - cursor.Position.X / 45);
-				gameCursor.SwapBlocks(
-					board.BlockLists.ElementAt(gameCursor.Left),
-					board.BlockLists.ElementAt(gameCursor.Left).ElementAt(gameCursor.Top), 
-					board.BlockLists.ElementAt(gameCursor.Left - 1), 
-					board.BlockLists.ElementAt(gameCursor.Left - 1).ElementAt(gameCursor.Top)
+				board.cursor.Top = (int)(8 - (cursorSprite.Position.Y / 45));
+				board.cursor.Left = (int)(5 - cursorSprite.Position.X / 45);
+				board.cursor.SwapBlocks(
+					board.BlockLists.ElementAt(board.cursor.Left),
+					board.BlockLists.ElementAt(board.cursor.Left).ElementAt(board.cursor.Top),
+					board.BlockLists.ElementAt(board.cursor.Left - 1),
+					board.BlockLists.ElementAt(board.cursor.Left - 1).ElementAt(board.cursor.Top)
 				);
 				swapSoundInstance.Play();
 				board.Update();
@@ -126,8 +128,8 @@ namespace Tetris_Attack
 
 		public override void Draw(GameTime gameTime)
 		{
-			cursorBatch.Begin(SpriteSortMode.FrontToBack, null);
-			cursor.Draw(gameTime, cursorBatch);
+			cursorBatch.Begin(SpriteSortMode.Deferred, null, SamplerState.PointClamp, null, null);
+			cursorSprite.Draw(gameTime, cursorBatch);
 			cursorBatch.End();
 			base.Draw(gameTime);
 		}
