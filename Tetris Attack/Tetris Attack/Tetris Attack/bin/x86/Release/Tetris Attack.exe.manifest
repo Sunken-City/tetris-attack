@@ -144,14 +144,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tetris Attack.exe" size="19968">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tetris Attack.exe" size="20480">
       <assemblyIdentity name="Tetris Attack" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>y85bY61MOhceHMR0zmJt27xb5H8=</dsig:DigestValue>
+        <dsig:DigestValue>lXHE6PcQsn5CTGjrYi8iL2kEZEE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -326,13 +326,13 @@
       <dsig:DigestValue>MKEmGY8pYuVpOTtorfy3GX02z74=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\Sprites\Chikorita.xnb" size="8058">
+  <file name="Content\Sprites\Chikorita.xnb" size="8092">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>xb4QwOkYk8a2Tlsz8MTdRZs59qk=</dsig:DigestValue>
+      <dsig:DigestValue>1JbtYSl4m+pk6yVPU+N/LF6GW+Q=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Sprites\Cyndaquil.xnb" size="7806">

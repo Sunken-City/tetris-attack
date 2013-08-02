@@ -1,5 +1,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using System.Linq;
+using System.Xml.Linq;
 
 namespace Tetris_Attack
 {
@@ -12,11 +14,26 @@ namespace Tetris_Attack
 		Sprite frame;
 		Sprite pokemon;
 		SpriteBatch frameBatch;
+		string path;
 
-		public FrameComponent(Game game)
+		public FrameComponent(Game game, string theme)
 			: base(game)
 		{
-			// TODO: Construct any child components here
+			loadTheme(theme);
+		}
+
+		public void loadTheme(string name)
+		{
+			if (name == "Totodile")
+				path = "Sprites/Totodile";
+			else if (name == "Pikachu")
+				path = "Sprites/Pikachu";
+			else if (name == "Cyndaquil")
+				path = "Sprites/Cyndaquil";
+			else if (name == "Chikorita")
+				path = "Sprites/Chikorita";
+			else if (name == "Marill")
+				path = "Sprites/Marill";
 		}
 
 		/// <summary>
@@ -32,14 +49,14 @@ namespace Tetris_Attack
 			frame.ZLayer = 1f;
 			pokemon = new Sprite(frameTexture, new Rectangle(198, 55, 34, 34));
 			pokemon.Scale = 3;
-			pokemon.Position = new Vector2(315,237);
+			pokemon.Position = new Vector2(315, 237);
 			frame.ZLayer = 0f;
 			pokemon.Active = true;
 		}
 
 		protected override void LoadContent()
 		{
-			frameTexture = Game.Content.Load<Texture2D>("Sprites/Totodile");
+			frameTexture = Game.Content.Load<Texture2D>(path);
 			frameBatch = new SpriteBatch(Game.GraphicsDevice);
 
 			base.LoadContent();

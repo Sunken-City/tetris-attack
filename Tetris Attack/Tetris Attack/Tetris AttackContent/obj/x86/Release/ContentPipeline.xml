@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Chikorita.xnb</Output>
-      <Time>2013-07-25T10:08:15.0047361-05:00</Time>
+      <Time>2013-08-01T19:21:00.9862246-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Cyndaquil.png</Source>
@@ -98,7 +98,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Totodile.xnb</Output>
-      <Time>2013-08-01T17:34:20.5766291-05:00</Time>
+      <Time>2013-08-01T19:18:46.1237397-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\WinLose Screen.png</Source>

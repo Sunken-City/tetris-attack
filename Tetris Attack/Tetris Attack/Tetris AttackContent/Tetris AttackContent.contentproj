@@ -41,7 +41,6 @@
       <Private>False</Private>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Compile Include="Sprites\Blocks.png">
       <Name>Blocks</Name>

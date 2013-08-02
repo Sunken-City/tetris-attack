@@ -11,12 +11,27 @@ namespace Tetris_Attack
 		Texture2D backgroundTexture;
 		Sprite[][] background = new Sprite[8][];
 		SpriteBatch bgBatch;
+		private string path;
 
 
-		public BackgroundComponent(Game game)
+		public BackgroundComponent(Game game, string theme)
 			: base(game)
 		{
-			// TODO: Construct any child components here
+			loadTheme(theme);
+		}
+
+		public void loadTheme(string name)
+		{
+			if (name == "Totodile")
+				path = "Sprites/Totodile";
+			else if (name == "Pikachu")
+				path = "Sprites/Pikachu";
+			else if (name == "Cyndaquil")
+				path = "Sprites/Cyndaquil";
+			else if (name == "Chikorita")
+				path = "Sprites/Chikorita";
+			else if (name == "Marill")
+				path = "Sprites/Marill";
 		}
 
 		/// <summary>
@@ -47,7 +62,7 @@ namespace Tetris_Attack
 
 		protected override void LoadContent()
 		{
-			backgroundTexture = Game.Content.Load<Texture2D>("Sprites/Totodile");
+			backgroundTexture = Game.Content.Load<Texture2D>(path);
 			bgBatch = new SpriteBatch(Game.GraphicsDevice);
 
 			base.LoadContent();

@@ -15,6 +15,7 @@ namespace Tetris_Attack
 		public readonly BackgroundComponent backgroundComponent;
 		public readonly BlockComponent blockComponent;
 		public readonly CursorComponent cursorComponent;
+		public string themeName = "Chikorita";
 
 		TimeSpan timePerPush = TimeSpan.FromMilliseconds(10000);
 		TimeSpan timePassed;
@@ -31,8 +32,8 @@ namespace Tetris_Attack
 			graphics.PreferredBackBufferWidth = 459;
 			Content.RootDirectory = "Content";
 			board = Board.BuildNewBoard();
-			Components.Add(backgroundComponent = new BackgroundComponent(this));
-			Components.Add(frameComponent = new FrameComponent(this));
+			Components.Add(backgroundComponent = new BackgroundComponent(this, themeName));
+			Components.Add(frameComponent = new FrameComponent(this, themeName));
 			Components.Add(blockComponent = new BlockComponent(this, board));
 			Components.Add(cursorComponent = new CursorComponent(this, board));
 		}
