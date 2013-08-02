@@ -6,7 +6,7 @@ namespace Tetris_Attack
 	/// <summary>
 	/// This is a game component that implements IUpdateable.
 	/// </summary>
-	public class BackgroundComponent: Microsoft.Xna.Framework.DrawableGameComponent
+	public class BackgroundComponent : Microsoft.Xna.Framework.DrawableGameComponent
 	{
 		Texture2D backgroundTexture;
 		Sprite[][] background = new Sprite[8][];
@@ -55,9 +55,6 @@ namespace Tetris_Attack
 					background[i][j] = backgroundTile;
 				}
 			}
-			
-			
-
 		}
 
 		protected override void LoadContent()

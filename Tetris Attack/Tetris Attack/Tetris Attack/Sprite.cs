@@ -64,5 +64,10 @@ namespace Tetris_Attack
 				   color, Rotation, Origin, Scale, SpriteEffects.None, ZLayer);
 			}
 		}
+
+		public virtual void SetFrame(int frameNumber)
+		{
+			_currentFrame = frameNumber;
+		}
 	}
 }

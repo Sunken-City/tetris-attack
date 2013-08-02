@@ -15,7 +15,9 @@ namespace Tetris_Attack
 		public readonly BackgroundComponent backgroundComponent;
 		public readonly BlockComponent blockComponent;
 		public readonly CursorComponent cursorComponent;
-		public string themeName = "Chikorita";
+		public readonly TextComponent textComponent;
+
+		public string themeName = "Pikachu";
 
 		TimeSpan timePerPush = TimeSpan.FromMilliseconds(10000);
 		TimeSpan timePassed;
@@ -36,6 +38,7 @@ namespace Tetris_Attack
 			Components.Add(frameComponent = new FrameComponent(this, themeName));
 			Components.Add(blockComponent = new BlockComponent(this, board));
 			Components.Add(cursorComponent = new CursorComponent(this, board));
+			Components.Add(textComponent = new TextComponent(this, board));
 		}
 
 		protected override void Initialize()

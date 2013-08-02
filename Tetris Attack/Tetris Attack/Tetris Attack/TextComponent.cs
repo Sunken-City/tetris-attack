@@ -17,10 +17,15 @@ namespace Tetris_Attack
 	/// </summary>
 	public class TextComponent : Microsoft.Xna.Framework.DrawableGameComponent
 	{
-		public TextComponent(Game game)
+		Texture2D textTexture;
+		Sprite[] score = new Sprite[6];
+		SpriteBatch textBatch;
+		Board board;
+
+		public TextComponent(Game game, Board b)
 			: base(game)
 		{
-			// TODO: Construct any child components here
+			board = b;
 		}
 
 		/// <summary>
@@ -29,9 +34,24 @@ namespace Tetris_Attack
 		/// </summary>
 		public override void Initialize()
 		{
-			// TODO: Add your initialization code here
-
 			base.Initialize();
+			for (int i = 0; i < 6; i++)
+			{
+				Sprite blueSprite = new Sprite(textTexture, new Rectangle(77, 115, 7, 12), 10, true, 2);
+				blueSprite.Scale = 3;
+				blueSprite.Position = new Vector2(414 - (21 * i + 2 * i), 102);
+				blueSprite.Origin = new Vector2(0, 0);
+				blueSprite.Active = true;
+				blueSprite.SetFrame(0);
+				score[i] = blueSprite;
+			}
+		}
+
+		protected override void LoadContent()
+		{
+			textTexture = Game.Content.Load<Texture2D>("Sprites/Totodile");
+			textBatch = new SpriteBatch(Game.GraphicsDevice);
+			base.LoadContent();
 		}
 
 		/// <summary>
@@ -40,9 +60,28 @@ namespace Tetris_Attack
 		/// <param name="gameTime">Provides a snapshot of timing values.</param>
 		public override void Update(GameTime gameTime)
 		{
-			// TODO: Add your update code here
-
 			base.Update(gameTime);
+			int currentScore = board.score;
+			int scoreDigit;
+			for (int i = 0; i < 6; i++)
+			{
+				scoreDigit = (currentScore % (int)(Math.Pow(10, (i + 1))) / (int)(Math.Pow(10, i)));
+				if (scoreDigit < 10)
+				{
+					score[i].SetFrame(scoreDigit);
+				}
+			}
+		}
+
+		public override void Draw(GameTime gameTime)
+		{
+			textBatch.Begin(SpriteSortMode.Deferred, null, SamplerState.PointClamp, null, null);
+			for (int i = 0; i < 6; i++)
+			{
+				score[i].Draw(gameTime, textBatch);
+			}
+			textBatch.End();
+			base.Draw(gameTime);
 		}
 	}
 }
