@@ -17,7 +17,7 @@ namespace Tetris_Attack
 		public readonly CursorComponent cursorComponent;
 		public readonly TextComponent textComponent;
 
-		public string themeName = "Pikachu";
+		public string themeName = "Cyndaquil";
 
 		TimeSpan timePerPush = TimeSpan.FromMilliseconds(10000);
 		TimeSpan timePassed;

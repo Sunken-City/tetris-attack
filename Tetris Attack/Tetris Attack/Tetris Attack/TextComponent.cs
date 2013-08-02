@@ -37,7 +37,7 @@ namespace Tetris_Attack
 			base.Initialize();
 			for (int i = 0; i < 6; i++)
 			{
-				Sprite blueSprite = new Sprite(textTexture, new Rectangle(77, 115, 7, 12), 10, true, 2);
+				Sprite blueSprite = new Sprite(textTexture, new Rectangle(77, 115, 7, 12), 11, true, 2);
 				blueSprite.Scale = 3;
 				blueSprite.Position = new Vector2(414 - (21 * i + 2 * i), 102);
 				blueSprite.Origin = new Vector2(0, 0);
@@ -69,6 +69,10 @@ namespace Tetris_Attack
 				if (scoreDigit < 10)
 				{
 					score[i].SetFrame(scoreDigit);
+				}
+				else
+				{
+					score[i].SetFrame(11);
 				}
 			}
 		}

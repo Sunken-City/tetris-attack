@@ -43,5 +43,11 @@ namespace Tetris_Attack
 				}
 			}
 		}
+
+		public void setPosition(int left, int top)
+		{
+			Top = top;
+			Left = left;
+		}
 	}
 }
