@@ -144,14 +144,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tetris Attack.exe" size="20992">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tetris Attack.exe" size="21504">
       <assemblyIdentity name="Tetris Attack" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>oK3mhX3Xsrew6Srf6hqf7z5faCo=</dsig:DigestValue>
+        <dsig:DigestValue>cel9cWwR2s+CIgnkc3ixOSzBKWw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -416,13 +416,13 @@
       <dsig:DigestValue>HGpfi7PrCfJhStjOwss6gdjD2yg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\Sprites\WinLose Screen.xnb" size="7184">
+  <file name="Content\Sprites\WinLose Screen.xnb" size="7222">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>u1jMl9sFAD1DlCP7AGWbfj478Q0=</dsig:DigestValue>
+      <dsig:DigestValue>8VXS5bRe42EbOUvisW5oWcSevYA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Game.ico" size="318">

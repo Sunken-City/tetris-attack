@@ -10,13 +10,13 @@ namespace Tetris_Attack
 		private const int MaxListLength = 10;
 		private const int maxNumberOfLists = 6;
 		private static Random randomNumberGenerator = new Random((int)DateTime.Now.Ticks);
-		public bool inDanger = false;
+		public bool inDanger { get; set; }
+		public bool active { get; set; }
 		public int score = 0;
 		public Cursor cursor = new Cursor();
 
 		public static Board BuildNewBoard()
 		{
-			
 			var blockLists = new System.Collections.Generic.List<System.Collections.Generic.LinkedList<Block>>();
 
 			for (int counter = 0; counter < maxNumberOfLists; counter++)
@@ -42,7 +42,9 @@ namespace Tetris_Attack
 
 			Board board = new Board()
 			{
-				BlockLists = blockLists
+				BlockLists = blockLists,
+				inDanger = false,
+				active = true
 			};
 
 			return board;

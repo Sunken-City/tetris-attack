@@ -122,10 +122,11 @@
     <Compile Include="Components\BackgroundComponent.cs" />
     <Compile Include="Components\FrameComponent.cs" />
     <Compile Include="Components\CursorComponent.cs" />
+    <Compile Include="Components\WinLoseComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Engine\Sprite.cs" />
-    <Compile Include="Components\TetrisAttack.cs" />
+    <Compile Include="TetrisAttack.cs" />
     <Compile Include="Engine\Block.cs" />
     <Compile Include="Engine\BlockStates.cs" />
     <Compile Include="Engine\BlockTypes.cs" />
