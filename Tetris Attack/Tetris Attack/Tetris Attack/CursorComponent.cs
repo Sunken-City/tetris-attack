@@ -73,11 +73,11 @@ namespace Tetris_Attack
 			{
 				timePassed = TimeSpan.Zero;
 				cursor.Left += 1;
-				updateSpritePosition();
-				if (cursorSprite.Position.X > 224)
+				updateSpriteX();
+				if (cursor.Left > 4)
 				{
-					cursorSprite.Position.X = 180;
-					cursor.Left -= 1;
+					cursor.Left = 4;
+					updateSpriteX();
 				}
 				else
 					moveSoundInstance.Play();
@@ -86,11 +86,11 @@ namespace Tetris_Attack
 			{
 				timePassed = TimeSpan.Zero;
 				cursor.Left -= 1;
-				updateSpritePosition();
-				if (cursorSprite.Position.X < 0)
+				updateSpriteX();
+				if (cursor.Left < 0)
 				{
-					cursorSprite.Position.X = 0;
-					cursor.Left += 1;
+					cursor.Left = 0;
+					updateSpriteX();
 				}
 				else
 					moveSoundInstance.Play();
@@ -99,11 +99,11 @@ namespace Tetris_Attack
 			{
 				timePassed = TimeSpan.Zero;
 				cursor.Top -= 1;
-				updateSpritePosition();
-				if (cursorSprite.Position.Y < 0)
+				updateSpriteY();
+				if (cursor.Top < 0)
 				{
-					cursorSprite.Position.Y = 0;
-					cursor.Top += 1;
+					cursor.Top = 0;
+					updateSpriteY();
 				}
 				else
 					moveSoundInstance.Play();
@@ -112,11 +112,11 @@ namespace Tetris_Attack
 			{
 				timePassed = TimeSpan.Zero;
 				cursor.Top += 1;
-				updateSpritePosition();
-				if (cursorSprite.Position.Y > 404)
+				updateSpriteY();
+				if (cursor.Top > 8)
 				{
-					cursorSprite.Position.Y = 360;
-					cursor.Top -= 1;
+					cursor.Top = 8;
+					updateSpriteY();
 				}
 				else
 					moveSoundInstance.Play();
@@ -156,6 +156,16 @@ namespace Tetris_Attack
 		public void updateSpritePosition()
 		{
 			cursorSprite.Position.X = cursor.Left * 45;
+			cursorSprite.Position.Y = cursor.Top * 45;
+		}
+
+		public void updateSpriteX()
+		{
+			cursorSprite.Position.X = cursor.Left * 45;
+		}
+
+		public void updateSpriteY()
+		{
 			cursorSprite.Position.Y = cursor.Top * 45;
 		}
 	}
