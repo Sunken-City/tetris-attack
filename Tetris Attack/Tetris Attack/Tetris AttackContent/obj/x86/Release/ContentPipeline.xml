@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Chikorita.xnb</Output>
-      <Time>2013-08-01T19:21:00.9862246-05:00</Time>
+      <Time>2013-08-02T10:07:38.6341921-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Cyndaquil.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Cyndaquil.xnb</Output>
-      <Time>2013-07-25T10:08:15.0347391-05:00</Time>
+      <Time>2013-08-02T10:08:07.7511035-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Gym Intro Screens.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Marill.xnb</Output>
-      <Time>2013-07-25T10:08:15.1607517-05:00</Time>
+      <Time>2013-08-02T10:08:23.2156498-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Pikachu.png</Source>
@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Pikachu.xnb</Output>
-      <Time>2013-07-25T10:08:15.1847541-05:00</Time>
+      <Time>2013-08-02T10:08:38.1831464-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Pokemon Mugshots.png</Source>
@@ -98,7 +98,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\acloudy\Documents\tetris-attack\Tetris Attack\Tetris Attack\Tetris Attack\bin\x86\Release\Content\Sprites\Totodile.xnb</Output>
-      <Time>2013-08-01T20:00:14.8335999-05:00</Time>
+      <Time>2013-08-02T10:07:41.3904677-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\WinLose Screen.png</Source>

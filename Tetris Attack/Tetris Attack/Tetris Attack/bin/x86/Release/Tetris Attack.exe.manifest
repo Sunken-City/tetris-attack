@@ -144,14 +144,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tetris Attack.exe" size="20992">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tetris Attack.exe" size="22016">
       <assemblyIdentity name="Tetris Attack" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>hmPoQcpB+VzpBqqTeimfENawuEk=</dsig:DigestValue>
+        <dsig:DigestValue>kPqzUi2dPcZisgbkx8Sm06d2R9w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -332,16 +332,16 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>1JbtYSl4m+pk6yVPU+N/LF6GW+Q=</dsig:DigestValue>
+      <dsig:DigestValue>oE/lImr1sdLK4opC2sRkPLkYRUo=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\Sprites\Cyndaquil.xnb" size="7806">
+  <file name="Content\Sprites\Cyndaquil.xnb" size="7814">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>uSbybf81/4x1b0eQpfaNHnMXEvs=</dsig:DigestValue>
+      <dsig:DigestValue>uCWN3a+KwcF2x1FEjLV/XSJc/Z8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Sprites\Gym Intro Screens.xnb" size="37992">
@@ -371,22 +371,22 @@
       <dsig:DigestValue>IQeKIS+iS20xR/6olKwXi+RsOBg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\Sprites\Marill.xnb" size="7732">
+  <file name="Content\Sprites\Marill.xnb" size="7726">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>yrb4Xt51mwQTlSgzF55MiXuq5mU=</dsig:DigestValue>
+      <dsig:DigestValue>2Coxx/rd5whEc7noK0Jjn5jjxys=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\Sprites\Pikachu.xnb" size="7900">
+  <file name="Content\Sprites\Pikachu.xnb" size="7892">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>LArPK/d2M6bVExr+8A2Eq133S/Q=</dsig:DigestValue>
+      <dsig:DigestValue>E/iM9KfWOYSVr1uh9DhWi9HA/1M=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Sprites\Pokemon Mugshots.xnb" size="41418">
@@ -413,7 +413,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>5/c584YeRpWLDAUD/ZvV2pt2aB4=</dsig:DigestValue>
+      <dsig:DigestValue>HGpfi7PrCfJhStjOwss6gdjD2yg=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Sprites\WinLose Screen.xnb" size="7184">

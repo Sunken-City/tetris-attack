@@ -7,9 +7,6 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Tetris_Attack
 {
-	/// <summary>
-	/// This is a game component that implements IUpdateable.
-	/// </summary>
 	public class CursorComponent : Microsoft.Xna.Framework.DrawableGameComponent
 	{
 		Texture2D cursorTexture;
@@ -32,10 +29,6 @@ namespace Tetris_Attack
 			cursor = board.cursor;
 		}
 
-		/// <summary>
-		/// Allows the game component to perform any initialization it needs to before starting
-		/// to run.  This is where it can query for any required services and load content.
-		/// </summary>
 		public override void Initialize()
 		{
 			base.Initialize();
@@ -61,10 +54,6 @@ namespace Tetris_Attack
 			base.LoadContent();
 		}
 
-		/// <summary>
-		/// Allows the game component to update itself.
-		/// </summary>
-		/// <param name="gameTime">Provides a snapshot of timing values.</param>
 		public override void Update(GameTime gameTime)
 		{
 			cursorSprite.Update(gameTime);
@@ -139,7 +128,13 @@ namespace Tetris_Attack
 			{
 				timePassed = TimeSpan.Zero;
 				board.PushBlocks();
-				board.Update();
+				cursor.Top -= 1;
+				updateSpriteY();
+				if (cursor.Top < 0)
+				{
+					cursor.Top = 0;
+					updateSpriteY();
+				}
 			}
 
 			base.Update(gameTime);
