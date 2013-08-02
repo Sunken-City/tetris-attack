@@ -128,6 +128,7 @@ namespace Tetris_Attack
 			{
 				timePassed = TimeSpan.Zero;
 				board.PushBlocks();
+
 				cursor.Top -= 1;
 				updateSpriteY();
 				if (cursor.Top < 0)
@@ -136,7 +137,6 @@ namespace Tetris_Attack
 					updateSpriteY();
 				}
 			}
-
 			base.Update(gameTime);
 		}
 

@@ -17,7 +17,7 @@ namespace Tetris_Attack
 		public readonly CursorComponent cursorComponent;
 		public readonly TextComponent textComponent;
 
-		public string themeName = "Cyndaquil";
+		public string themeName = "Totodile";
 
 		TimeSpan timePerPush = TimeSpan.FromMilliseconds(10000);
 		TimeSpan timePassed;

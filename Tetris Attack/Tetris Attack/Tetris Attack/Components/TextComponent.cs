@@ -34,10 +34,6 @@ namespace Tetris_Attack
 			board = b;
 		}
 
-		/// <summary>
-		/// Allows the game component to perform any initialization it needs to before starting
-		/// to run.  This is where it can query for any required services and load content.
-		/// </summary>
 		public override void Initialize()
 		{
 			base.Initialize();
@@ -54,17 +50,6 @@ namespace Tetris_Attack
 
 		}
 
-		private Sprite buildTextSprite(int i, Rectangle rectangle, Vector2 position)
-		{
-			Sprite textSprite = new Sprite(textTexture, rectangle, 11, true, 2);
-			textSprite.Scale = 3;
-			textSprite.Position = position;
-			textSprite.Origin = new Vector2(0, 0);
-			textSprite.Active = true;
-			textSprite.SetFrame(0);
-			return textSprite;
-		}
-
 		protected override void LoadContent()
 		{
 			textTexture = Game.Content.Load<Texture2D>("Sprites/Totodile");
@@ -72,26 +57,13 @@ namespace Tetris_Attack
 			base.LoadContent();
 		}
 
-		/// <summary>
-		/// Allows the game component to update itself.
-		/// </summary>
-		/// <param name="gameTime">Provides a snapshot of timing values.</param>
 		public override void Update(GameTime gameTime)
 		{
 			base.Update(gameTime);
-			int currentScore = board.score;
-			int scoreDigit;
+
 			for (int i = 0; i < 6; i++)
 			{
-				scoreDigit = (currentScore % (int)(Math.Pow(10, (i + 1))) / (int)(Math.Pow(10, i)));
-				if (scoreDigit < 10)
-				{
-					score[i].SetFrame(scoreDigit);
-				}
-				else
-				{
-					score[i].SetFrame(11);
-				}
+				setDigit(board.score, i, score);
 			}
 
 			if ((timePassed += gameTime.ElapsedGameTime) > timePerSecond)
@@ -104,51 +76,60 @@ namespace Tetris_Attack
 					seconds = 0;
 				}
 
-				int timeDigit;
-
 				for (int i = 0; i < 2; i++)
 				{
-					timeDigit = (seconds % (int)(Math.Pow(10, (i + 1))) / (int)(Math.Pow(10, i)));
-					if (timeDigit < 10)
-					{ 
-						secondsSprites[i].SetFrame(timeDigit);
-					}
-					else
-					{
-						secondsSprites[i].SetFrame(11);
-					}
+					setDigit(seconds, i, secondsSprites);
 				}
 
 				for (int i = 0; i < 2; i++)
 				{
-					timeDigit = (minutes % (int)(Math.Pow(10, (i + 1))) / (int)(Math.Pow(10, i)));
-					if (timeDigit < 10)
-					{
-						minutesSprites[i].SetFrame(timeDigit);
-					}
-					else
-					{
-						minutesSprites[i].SetFrame(11);
-					}
+					setDigit(minutes, i, minutesSprites);
 				}
 			}
-			
 		}
 
 		public override void Draw(GameTime gameTime)
 		{
 			textBatch.Begin(SpriteSortMode.Deferred, null, SamplerState.PointClamp, null, null);
+
 			for (int i = 0; i < 2; i++)
 			{
 				secondsSprites[i].Draw(gameTime, textBatch);
 				minutesSprites[i].Draw(gameTime, textBatch);
 			}
+
 			for (int i = 0; i < 6; i++)
 			{
 				score[i].Draw(gameTime, textBatch);
 			}
+
 			textBatch.End();
 			base.Draw(gameTime);
 		}
+
+		private void setDigit(int total, int i, Sprite[] sprites)
+		{
+			int digit = (total % (int)(Math.Pow(10, (i + 1))) / (int)(Math.Pow(10, i)));
+			if (digit < 10)
+			{
+				sprites[i].SetFrame(digit);
+			}
+			else
+			{
+				sprites[i].SetFrame(11);
+			}
+		}
+
+		private Sprite buildTextSprite(int i, Rectangle rectangle, Vector2 position)
+		{
+			Sprite textSprite = new Sprite(textTexture, rectangle, 11, true, 2);
+			textSprite.Scale = 3;
+			textSprite.Position = position;
+			textSprite.Origin = new Vector2(0, 0);
+			textSprite.Active = true;
+			textSprite.SetFrame(0);
+			return textSprite;
+		}
+
 	}
 }
